@@ -1,0 +1,18 @@
+<VertexBuffer name="vb">
+	<Vertex position="-50, 0, -50" uv="0, 0"/>
+	<Vertex position="-50, 0, 50" uv="0, 1"/>
+	<Vertex position="50, 0, -50" uv="1, 0"/>
+	<Vertex position="50, 10, 50" uv="1, 1"/>
+</VertexBuffer>
+<IndexBuffer name="ib">
+	<Triangle indices="0, 1, 2"/>
+	<Triangle indices="3, 1, 2"/>
+</IndexBuffer>
+<Texture name="texture" filename="stage.tga"/>
+<Batch 
+	name="stage"
+	vertexBuffer="vb"
+	indexBuffer="ib"
+	texture="texture"
+	blend="opaque">
+</Batch>

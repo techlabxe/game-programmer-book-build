@@ -1,0 +1,606 @@
+<Container>
+	<VertexBuffer name="batch0_vb">
+		<Vertex position="0, 0.5207, -0.729" normal="0, -0.8628, 0.5056" uv="5.29e-3, 0.2263"/>
+		<Vertex position="0, 0.309, -0.9511" normal="1.e-6, -0.4655, 0.8851" uv="5.29e-3, 0.6128"/>
+		<Vertex position="0.2803, 0.309, -0.9088" normal="-0.2609, -0.4655, 0.8457" uv="0.1005, 0.6128"/>
+		<Vertex position="0.2148, 0.5207, -0.6967" normal="-0.149, -0.8628, 0.4831" uv="0.1005, 0.2263"/>
+		<Vertex position="0.5357, 0.309, -0.7858" normal="-0.4985, -0.4656, 0.7312" uv="0.1958, 0.6128"/>
+		<Vertex position="0.4104, 0.5207, -0.6024" normal="-0.2847, -0.8629, 0.4176" uv="0.1958, 0.2263"/>
+		<Vertex position="0.7436, 0.309, -0.593" normal="-0.6919, -0.4657, 0.5518" uv="0.291, 0.6128"/>
+		<Vertex position="0.5696, 0.5207, -0.4547" normal="-0.395, -0.863, 0.315" uv="0.291, 0.2263"/>
+		<Vertex position="0.8853, 0.309, -0.3475" normal="-0.8237, -0.4658, 0.3233" uv="0.3862, 0.6128"/>
+		<Vertex position="0.6782, 0.5207, -0.2666" normal="-0.4701, -0.8631, 0.1845" uv="0.3862, 0.2263"/>
+		<Vertex position="0.9484, 0.309, -0.07107" normal="-0.8824, -0.4659, 0.06613" uv="0.4815, 0.6128"/>
+		<Vertex position="0.7265, 0.5207, -0.05489" normal="-0.5033, -0.8633, 0.03774" uv="0.4815, 0.2263"/>
+		<Vertex position="0.9272, 0.309, 0.2116" normal="-0.8626, -0.466, -0.1969" uv="0.5767, 0.6128"/>
+		<Vertex position="0.7103, 0.5207, 0.1617" normal="-0.4918, -0.8634, -0.1122" uv="0.5767, 0.2263"/>
+		<Vertex position="0.8236, 0.309, 0.4755" normal="-0.7662, -0.4662, -0.4423" uv="0.672, 0.6128"/>
+		<Vertex position="0.631, 0.5207, 0.3638" normal="-0.4367, -0.8636, -0.2521" uv="0.672, 0.2263"/>
+		<Vertex position="0.6469, 0.309, 0.6972" normal="-0.6017, -0.4663, -0.6485" uv="0.7672, 0.6128"/>
+		<Vertex position="0.4956, 0.5207, 0.5336" normal="-0.3428, -0.8637, -0.3694" uv="0.7672, 0.2263"/>
+		<Vertex position="0.4126, 0.309, 0.8569" normal="-0.3838, -0.4663, -0.797" uv="0.8624, 0.6128"/>
+		<Vertex position="0.3161, 0.5207, 0.656" normal="-0.2186, -0.8638, -0.4539" uv="0.8624, 0.2263"/>
+		<Vertex position="0.1417, 0.309, 0.9404" normal="-0.1318, -0.4664, -0.8747" uv="0.9577, 0.6128"/>
+		<Vertex position="0.1086, 0.5207, 0.72" normal="-0.07508, -0.8639, -0.4981" uv="0.9577, 0.2263"/>
+		<Vertex position="-0.1417, 0.309, 0.9404" normal="0.1318, -0.4664, -0.8747" uv="1.053, 0.6128"/>
+		<Vertex position="-0.1086, 0.5207, 0.72" normal="0.07508, -0.8639, -0.4981" uv="1.053, 0.2263"/>
+		<Vertex position="-0.4126, 0.309, 0.8569" normal="0.3838, -0.4663, -0.797" uv="1.148, 0.6128"/>
+		<Vertex position="-0.3161, 0.5207, 0.656" normal="0.2186, -0.8638, -0.4539" uv="1.148, 0.2263"/>
+		<Vertex position="-0.6469, 0.309, 0.6972" normal="0.6017, -0.4663, -0.6485" uv="1.243, 0.6128"/>
+		<Vertex position="-0.4956, 0.5207, 0.5336" normal="0.3428, -0.8637, -0.3694" uv="1.243, 0.2263"/>
+		<Vertex position="-0.8236, 0.309, 0.4755" normal="0.7662, -0.4662, -0.4423" uv="1.339, 0.6128"/>
+		<Vertex position="-0.631, 0.5207, 0.3638" normal="0.4367, -0.8636, -0.2521" uv="1.339, 0.2263"/>
+		<Vertex position="-0.9272, 0.309, 0.2116" normal="0.8626, -0.466, -0.1969" uv="1.434, 0.6128"/>
+		<Vertex position="-0.7103, 0.5207, 0.1617" normal="0.4918, -0.8634, -0.1122" uv="1.434, 0.2263"/>
+		<Vertex position="-0.9484, 0.309, -0.07107" normal="0.8824, -0.4659, 0.06613" uv="1.529, 0.6128"/>
+		<Vertex position="-0.7265, 0.5207, -0.05489" normal="0.5033, -0.8633, 0.03774" uv="1.529, 0.2263"/>
+		<Vertex position="-0.8853, 0.309, -0.3475" normal="0.8237, -0.4658, 0.3233" uv="1.624, 0.6128"/>
+		<Vertex position="-0.6782, 0.5207, -0.2666" normal="0.4701, -0.8631, 0.1845" uv="1.624, 0.2263"/>
+		<Vertex position="-0.7436, 0.309, -0.593" normal="0.6919, -0.4657, 0.5518" uv="1.72, 0.6128"/>
+		<Vertex position="-0.5696, 0.5207, -0.4547" normal="0.395, -0.863, 0.315" uv="1.72, 0.2263"/>
+		<Vertex position="-0.5357, 0.309, -0.7858" normal="0.4985, -0.4656, 0.7312" uv="1.815, 0.6128"/>
+		<Vertex position="-0.4104, 0.5207, -0.6024" normal="0.2847, -0.8629, 0.4176" uv="1.815, 0.2263"/>
+		<Vertex position="-0.2803, 0.309, -0.9088" normal="0.2609, -0.4655, 0.8457" uv="1.91, 0.6128"/>
+		<Vertex position="-0.2148, 0.5207, -0.6967" normal="0.149, -0.8628, 0.4831" uv="1.91, 0.2263"/>
+		<Vertex position="0, 0.309, -0.9511" normal="1.e-6, -0.4655, 0.8851" uv="2.005, 0.6128"/>
+		<Vertex position="0, 0.5207, -0.729" normal="0, -0.8628, 0.5056" uv="2.005, 0.2263"/>
+		<Vertex position="0, 0, -1" normal="1.e-6, -0.1564, 0.9877" uv="5.29e-3, 0.9982"/>
+		<Vertex position="0.2948, 0, -0.9556" normal="-0.2911, -0.1564, 0.9438" uv="0.1005, 0.9982"/>
+		<Vertex position="0.5633, 0, -0.8262" normal="-0.5564, -0.1564, 0.8161" uv="0.1958, 0.9982"/>
+		<Vertex position="0.7818, 0, -0.6235" normal="-0.7722, -0.1564, 0.6158" uv="0.291, 0.9982"/>
+		<Vertex position="0.9309, 0, -0.3653" normal="-0.9194, -0.1564, 0.3608" uv="0.3862, 0.9982"/>
+		<Vertex position="0.9972, 0, -0.07473" normal="-0.9849, -0.1564, 0.07381" uv="0.4815, 0.9982"/>
+		<Vertex position="0.9749, 0, 0.2225" normal="-0.9629, -0.1564, -0.2198" uv="0.5767, 0.9982"/>
+		<Vertex position="0.866, 0, 0.5" normal="-0.8554, -0.1564, -0.4938" uv="0.672, 0.9982"/>
+		<Vertex position="0.6802, 0, 0.733" normal="-0.6718, -0.1564, -0.724" uv="0.7672, 0.9982"/>
+		<Vertex position="0.4339, 0, 0.901" normal="-0.4285, -0.1564, -0.8899" uv="0.8624, 0.9982"/>
+		<Vertex position="0.149, 0, 0.9888" normal="-0.1472, -0.1564, -0.9767" uv="0.9577, 0.9982"/>
+		<Vertex position="-0.149, 0, 0.9888" normal="0.1472, -0.1564, -0.9767" uv="1.053, 0.9982"/>
+		<Vertex position="-0.4339, 0, 0.901" normal="0.4285, -0.1564, -0.8899" uv="1.148, 0.9982"/>
+		<Vertex position="-0.6802, 0, 0.733" normal="0.6718, -0.1564, -0.724" uv="1.243, 0.9982"/>
+		<Vertex position="-0.866, 0, 0.5" normal="0.8554, -0.1564, -0.4938" uv="1.339, 0.9982"/>
+		<Vertex position="-0.9749, 0, 0.2225" normal="0.9629, -0.1564, -0.2198" uv="1.434, 0.9982"/>
+		<Vertex position="-0.9972, 0, -0.07473" normal="0.9849, -0.1564, 0.07381" uv="1.529, 0.9982"/>
+		<Vertex position="-0.9309, 0, -0.3653" normal="0.9194, -0.1564, 0.3608" uv="1.624, 0.9982"/>
+		<Vertex position="-0.7818, 0, -0.6235" normal="0.7722, -0.1564, 0.6158" uv="1.72, 0.9982"/>
+		<Vertex position="-0.5633, 0, -0.8262" normal="0.5564, -0.1564, 0.8161" uv="1.815, 0.9982"/>
+		<Vertex position="-0.2948, 0, -0.9556" normal="0.2911, -0.1564, 0.9438" uv="1.91, 0.9982"/>
+		<Vertex position="0, 0, -1" normal="1.e-6, -0.1564, 0.9877" uv="2.005, 0.9982"/>
+		<Vertex position="-0.3955, 0.6228, -0.03145" normal="0.1986, -0.98, 0.0149" uv="1.529, 0.05483"/>
+		<Vertex position="-0.3692, 0.6228, -0.1467" normal="0.1856, -0.9799, 0.07284" uv="1.624, 0.05483"/>
+		<Vertex position="-0.1154, 0.6508, -0.04822" normal="0.09517, -0.9948, 0.03736" uv="1.624, 4.69e-3"/>
+		<Vertex position="-0.1236, 0.6508, -0.01219" normal="0.1018, -0.9948, 7.642e-3" uv="1.529, 4.69e-3"/>
+		<Vertex position="-0.1209, 0.6508, 0.02467" normal="0.09945, -0.9948, -0.02269" uv="1.434, 4.69e-3"/>
+		<Vertex position="-0.3867, 0.6228, 0.08644" normal="0.1939, -0.98, -0.04424" uv="1.434, 0.05483"/>
+		<Vertex position="-0.3101, 0.6228, -0.2491" normal="0.156, -0.9799, 0.1244" uv="1.72, 0.05483"/>
+		<Vertex position="-0.09694, 0.6508, -0.08023" normal="0.08002, -0.9947, 0.06382" uv="1.72, 4.69e-3"/>
+		<Vertex position="-0.1074, 0.6508, 0.05908" normal="0.08824, -0.9948, -0.05094" uv="1.339, 4.69e-3"/>
+		<Vertex position="-0.3435, 0.6228, 0.1965" normal="0.1721, -0.9801, -0.09933" uv="1.339, 0.05483"/>
+		<Vertex position="-0.2234, 0.6228, -0.3295" normal="0.1125, -0.9799, 0.165" uv="1.815, 0.05483"/>
+		<Vertex position="-0.06985, 0.6508, -0.1054" normal="0.0577, -0.9947, 0.08464" uv="1.815, 4.69e-3"/>
+		<Vertex position="-0.08434, 0.6508, 0.08797" normal="0.06924, -0.9948, -0.07462" uv="1.243, 4.69e-3"/>
+		<Vertex position="-0.2698, 0.6228, 0.2889" normal="0.135, -0.9801, -0.1455" uv="1.243, 0.05483"/>
+		<Vertex position="-0.1169, 0.6228, -0.3808" normal="0.05889, -0.9798, 0.1909" uv="1.91, 0.05483"/>
+		<Vertex position="-0.03655, 0.6508, -0.1214" normal="0.03021, -0.9947, 0.09794" uv="1.91, 4.69e-3"/>
+		<Vertex position="-0.0538, 0.6508, 0.1088" normal="0.04414, -0.9948, -0.09165" uv="1.148, 4.69e-3"/>
+		<Vertex position="-0.1721, 0.6228, 0.3555" normal="0.08608, -0.9801, -0.1787" uv="1.148, 0.05483"/>
+		<Vertex position="0, 0.6228, -0.3984" normal="0, -0.9798, 0.1998" uv="2.005, 0.05483"/>
+		<Vertex position="0, 0.6508, -0.1269" normal="0, -0.9947, 0.1025" uv="2.005, 4.69e-3"/>
+		<Vertex position="-0.01848, 0.6508, 0.1197" normal="0.01516, -0.9948, -0.1006" uv="1.053, 4.69e-3"/>
+		<Vertex position="-0.05911, 0.6228, 0.3904" normal="0.02956, -0.9801, -0.1961" uv="1.053, 0.05483"/>
+		<Vertex position="0, 0.6228, -0.3984" normal="0, -0.9798, 0.1998" uv="5.29e-3, 0.05483"/>
+		<Vertex position="0.1169, 0.6228, -0.3808" normal="-0.05889, -0.9798, 0.1909" uv="0.1005, 0.05483"/>
+		<Vertex position="0.03655, 0.6508, -0.1214" normal="-0.03021, -0.9947, 0.09794" uv="0.1005, 4.69e-3"/>
+		<Vertex position="0, 0.6508, -0.1269" normal="0, -0.9947, 0.1025" uv="5.29e-3, 4.69e-3"/>
+		<Vertex position="0.01848, 0.6508, 0.1197" normal="-0.01516, -0.9948, -0.1006" uv="0.9577, 4.69e-3"/>
+		<Vertex position="0.05911, 0.6228, 0.3904" normal="-0.02956, -0.9801, -0.1961" uv="0.9577, 0.05483"/>
+		<Vertex position="0.2234, 0.6228, -0.3295" normal="-0.1125, -0.9799, 0.165" uv="0.1958, 0.05483"/>
+		<Vertex position="0.06985, 0.6508, -0.1054" normal="-0.0577, -0.9947, 0.08464" uv="0.1958, 4.69e-3"/>
+		<Vertex position="0.0538, 0.6508, 0.1088" normal="-0.04414, -0.9948, -0.09165" uv="0.8624, 4.69e-3"/>
+		<Vertex position="0.1721, 0.6228, 0.3555" normal="-0.08608, -0.9801, -0.1787" uv="0.8624, 0.05483"/>
+		<Vertex position="0.3101, 0.6228, -0.2491" normal="-0.156, -0.9799, 0.1244" uv="0.291, 0.05483"/>
+		<Vertex position="0.09694, 0.6508, -0.08023" normal="-0.08002, -0.9947, 0.06382" uv="0.291, 4.69e-3"/>
+		<Vertex position="0.08434, 0.6508, 0.08797" normal="-0.06924, -0.9948, -0.07462" uv="0.7672, 4.69e-3"/>
+		<Vertex position="0.2698, 0.6228, 0.2889" normal="-0.135, -0.9801, -0.1455" uv="0.7672, 0.05483"/>
+		<Vertex position="0.3692, 0.6228, -0.1467" normal="-0.1856, -0.9799, 0.07284" uv="0.3862, 0.05483"/>
+		<Vertex position="0.1154, 0.6508, -0.04822" normal="-0.09517, -0.9948, 0.03736" uv="0.3862, 4.69e-3"/>
+		<Vertex position="0.1074, 0.6508, 0.05908" normal="-0.08824, -0.9948, -0.05094" uv="0.672, 4.69e-3"/>
+		<Vertex position="0.3435, 0.6228, 0.1965" normal="-0.1721, -0.9801, -0.09933" uv="0.672, 0.05483"/>
+		<Vertex position="0.3955, 0.6228, -0.03145" normal="-0.1986, -0.98, 0.0149" uv="0.4815, 0.05483"/>
+		<Vertex position="0.1236, 0.6508, -0.01219" normal="-0.1018, -0.9948, 7.641e-3" uv="0.4815, 4.69e-3"/>
+		<Vertex position="0.1209, 0.6508, 0.02467" normal="-0.09945, -0.9948, -0.02269" uv="0.5767, 4.69e-3"/>
+		<Vertex position="0.3867, 0.6228, 0.08644" normal="-0.1939, -0.98, -0.04424" uv="0.5767, 0.05483"/>
+		<Vertex position="-0.5, 0, 1" normal="0, 1, 0" uv="11, -52" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.25, 0, 1" normal="0, 1, 0" uv="18, -52" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.25, 0, 0.75" normal="0, 1, 0" uv="18, -45" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.5, 0, 0.75" normal="0, 1, 0" uv="11, -45" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.25, 0, 1" normal="0, 1, 0" uv="25.01, -45" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0, 0, 1" normal="0, 1, 0" uv="18, -45" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0, 0, 0.75" normal="0, 1, 0" uv="18, -52" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.25, 0, 0.75" normal="0, 1, 0" uv="25.01, -52" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0, 0, 1" normal="0, 1, 0" uv="25.01, -52" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.25, 0, 1" normal="0, 1, 0" uv="32.01, -52" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.25, 0, 0.75" normal="0, 1, 0" uv="32.01, -45" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0, 0, 0.75" normal="0, 1, 0" uv="25.01, -45" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.25, 0, 1" normal="0, 1, 0" uv="39.01, -45" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.5, 0, 1" normal="0, 1, 0" uv="32.01, -45" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.5, 0, 0.75" normal="0, 1, 0" uv="32.01, -52" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.25, 0, 0.75" normal="0, 1, 0" uv="39.01, -52" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0, 0, 0.5" normal="0, 1, 0" uv="25.01, -38"/>
+		<Vertex position="-0.25, 0, 0.5" normal="0, 1, 0" uv="18, -38"/>
+		<Vertex position="0, 0, 0.75" normal="0, 1, 0" uv="32.01, -45" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.25, 0, 0.75" normal="0, 1, 0" uv="32.01, -38" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.25, 0, 0.5" normal="0, 1, 0" uv="25.01, -38"/>
+		<Vertex position="0, 0, 0.5" normal="0, 1, 0" uv="25.01, -45"/>
+		<Vertex position="-1, 0, 0.5" normal="0, 1, 0" uv="-3.007, -31" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.75, 0, 0.5" normal="0, 1, 0" uv="-3.007, -38" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.75, 0, 0.25" normal="0, 1, 0" uv="3.997, -38" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-1, 0, 0.25" normal="0, 1, 0" uv="3.997, -31" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.5, 0, 0.5" normal="0, 1, 0" uv="18, -31" color="0.5608, 0.5608, 0.5608, 1"/>
+		<Vertex position="-0.25, 0, 0.5" normal="0, 1, 0" uv="11, -31"/>
+		<Vertex position="-0.25, 0, 0.25" normal="0, 1, 0" uv="11, -38"/>
+		<Vertex position="-0.5, 0, 0.25" normal="0, 1, 0" uv="18, -38"/>
+		<Vertex position="-0.25, 0, 0.5" normal="0, 1, 0" uv="25.01, -31"/>
+		<Vertex position="0, 0, 0.5" normal="0, 1, 0" uv="18, -31"/>
+		<Vertex position="0, 0, 0.25" normal="0, 1, 0" uv="18, -38"/>
+		<Vertex position="-0.25, 0, 0.25" normal="0, 1, 0" uv="25.01, -38"/>
+		<Vertex position="0.25, 0, 0.5" normal="0, 1, 0" uv="32.01, -38"/>
+		<Vertex position="0.25, 0, 0.25" normal="0, 1, 0" uv="32.01, -31"/>
+		<Vertex position="0, 0, 0.25" normal="0, 1, 0" uv="25.01, -31"/>
+		<Vertex position="0.5, 0, 0.5" normal="0, 1, 0" uv="39.01, -38"/>
+		<Vertex position="0.5, 0, 0.25" normal="0, 1, 0" uv="39.01, -31"/>
+		<Vertex position="0.75, 0, 0.5" normal="0, 1, 0" uv="46.01, -38" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="1, 0, 0.5" normal="0, 1, 0" uv="53.02, -38" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="1, 0, 0.25" normal="0, 1, 0" uv="53.02, -31" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.75, 0, 0.25" normal="0, 1, 0" uv="46.01, -31" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-1, 0, 0.25" normal="0, 1, 0" uv="-3.007, -31" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.75, 0, 0.25" normal="0, 1, 0" uv="3.997, -31" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.75, 0, 0" normal="0, 1, 0" uv="3.997, -24" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-1, 0, 0" normal="0, 1, 0" uv="-3.007, -24" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.75, 0, 0.25" normal="0, 1, 0" uv="11, -24" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.5, 0, 0.25" normal="0, 1, 0" uv="3.997, -24"/>
+		<Vertex position="-0.5, 0, 0" normal="0, 1, 0" uv="3.997, -31"/>
+		<Vertex position="-0.75, 0, 0" normal="0, 1, 0" uv="11, -31" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.5, 0, 0.25" normal="0, 1, 0" uv="11, -31"/>
+		<Vertex position="-0.25, 0, 0.25" normal="0, 1, 0" uv="18, -31"/>
+		<Vertex position="-0.25, 0, 0" normal="0, 1, 0" uv="18, -24"/>
+		<Vertex position="-0.5, 0, 0" normal="0, 1, 0" uv="11, -24"/>
+		<Vertex position="-0.25, 0, 0.25" normal="0, 1, 0" uv="18, -24"/>
+		<Vertex position="0, 0, 0.25" normal="0, 1, 0" uv="18, -31"/>
+		<Vertex position="0, 0, 0" normal="0, 1, 0" uv="25.01, -31"/>
+		<Vertex position="-0.25, 0, 0" normal="0, 1, 0" uv="25.01, -24"/>
+		<Vertex position="0.25, 0, 0" normal="0, 1, 0" uv="32.01, -24"/>
+		<Vertex position="0, 0, 0" normal="0, 1, 0" uv="25.01, -24"/>
+		<Vertex position="0.25, 0, 0.25" normal="0, 1, 0" uv="39.01, -24"/>
+		<Vertex position="0.5, 0, 0.25" normal="0, 1, 0" uv="32.01, -24"/>
+		<Vertex position="0.5, 0, 0" normal="0, 1, 0" uv="32.01, -31"/>
+		<Vertex position="0.25, 0, 0" normal="0, 1, 0" uv="39.01, -31"/>
+		<Vertex position="0.75, 0, 0" normal="0, 1, 0" uv="46.01, -24" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.5, 0, 0" normal="0, 1, 0" uv="39.01, -24"/>
+		<Vertex position="1, 0, 0" normal="0, 1, 0" uv="53.02, -24" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.75, 0, -0.25" normal="0, 1, 0" uv="3.997, -17" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-1, 0, -0.25" normal="0, 1, 0" uv="-3.007, -17" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.75, 0, 0" normal="0, 1, 0" uv="3.997, -17" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.5, 0, 0" normal="0, 1, 0" uv="3.997, -24"/>
+		<Vertex position="-0.5, 0, -0.25" normal="0, 1, 0" uv="11, -24"/>
+		<Vertex position="-0.75, 0, -0.25" normal="0, 1, 0" uv="11, -17" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.5, 0, 0" normal="0, 1, 0" uv="18, -17"/>
+		<Vertex position="-0.25, 0, 0" normal="0, 1, 0" uv="11, -17"/>
+		<Vertex position="-0.25, 0, -0.25" normal="0, 1, 0" uv="11, -24"/>
+		<Vertex position="-0.5, 0, -0.25" normal="0, 1, 0" uv="18, -24"/>
+		<Vertex position="0, 0, -0.25" normal="0, 1, 0" uv="25.01, -17"/>
+		<Vertex position="-0.25, 0, -0.25" normal="0, 1, 0" uv="18, -17"/>
+		<Vertex position="0, 0, 0" normal="0, 1, 0" uv="25.01, -17"/>
+		<Vertex position="0.25, 0, 0" normal="0, 1, 0" uv="25.01, -24"/>
+		<Vertex position="0.25, 0, -0.25" normal="0, 1, 0" uv="32.01, -24"/>
+		<Vertex position="0, 0, -0.25" normal="0, 1, 0" uv="32.01, -17"/>
+		<Vertex position="0.5, 0, -0.25" normal="0, 1, 0" uv="39.01, -17"/>
+		<Vertex position="0.25, 0, -0.25" normal="0, 1, 0" uv="32.01, -17"/>
+		<Vertex position="0.5, 0, 0" normal="0, 1, 0" uv="46.01, -17"/>
+		<Vertex position="0.75, 0, 0" normal="0, 1, 0" uv="39.01, -17" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.75, 0, -0.25" normal="0, 1, 0" uv="39.01, -24" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.5, 0, -0.25" normal="0, 1, 0" uv="46.01, -24"/>
+		<Vertex position="1, 0, -0.25" normal="0, 1, 0" uv="53.02, -17" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.75, 0, -0.25" normal="0, 1, 0" uv="46.01, -17" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.75, 0, -0.5" normal="0, 1, 0" uv="3.997, -10" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-1, 0, -0.5" normal="0, 1, 0" uv="-3.007, -10" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.5, 0, -0.25" normal="0, 1, 0" uv="11, -10"/>
+		<Vertex position="-0.25, 0, -0.25" normal="0, 1, 0" uv="11, -17"/>
+		<Vertex position="-0.25, 0, -0.5" normal="0, 1, 0" uv="18, -17"/>
+		<Vertex position="-0.5, 0, -0.5" normal="0, 1, 0" uv="18, -10"/>
+		<Vertex position="0, 0, -0.5" normal="0, 1, 0" uv="25.01, -10"/>
+		<Vertex position="-0.25, 0, -0.5" normal="0, 1, 0" uv="18, -10"/>
+		<Vertex position="0, 0, -0.25" normal="0, 1, 0" uv="32.01, -10"/>
+		<Vertex position="0.25, 0, -0.25" normal="0, 1, 0" uv="25.01, -10"/>
+		<Vertex position="0.25, 0, -0.5" normal="0, 1, 0" uv="25.01, -17"/>
+		<Vertex position="0, 0, -0.5" normal="0, 1, 0" uv="32.01, -17"/>
+		<Vertex position="0.5, 0, -0.5" normal="0, 1, 0" uv="39.01, -10"/>
+		<Vertex position="0.25, 0, -0.5" normal="0, 1, 0" uv="32.01, -10"/>
+		<Vertex position="1, 0, -0.5" normal="0, 1, 0" uv="53.02, -10" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.75, 0, -0.5" normal="0, 1, 0" uv="46.01, -10" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.25, 0, -0.5" normal="0, 1, 0" uv="18, -3.002"/>
+		<Vertex position="0, 0, -0.5" normal="0, 1, 0" uv="18, -10"/>
+		<Vertex position="0, 0, -0.75" normal="0, 1, 0" uv="25.01, -10" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.25, 0, -0.75" normal="0, 1, 0" uv="25.01, -3.002" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0, 0, -0.5" normal="0, 1, 0" uv="32.01, -3.002"/>
+		<Vertex position="0.25, 0, -0.5" normal="0, 1, 0" uv="25.01, -3.002"/>
+		<Vertex position="0.25, 0, -0.75" normal="0, 1, 0" uv="25.01, -10" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0, 0, -0.75" normal="0, 1, 0" uv="32.01, -10" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.5, 0, -0.75" normal="0, 1, 0" uv="18, 3.997" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.25, 0, -0.75" normal="0, 1, 0" uv="11, 3.997" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.25, 0, -1" normal="0, 1, 0" uv="11, -3.002" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.5, 0, -1" normal="0, 1, 0" uv="18, -3.002" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.25, 0, -0.75" normal="0, 1, 0" uv="18, -3.002" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0, 0, -0.75" normal="0, 1, 0" uv="25.01, -3.002" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0, 0, -1" normal="0, 1, 0" uv="25.01, 3.997" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.25, 0, -1" normal="0, 1, 0" uv="18, 3.997" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0, 0, -0.75" normal="0, 1, 0" uv="25.01, 3.997" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.25, 0, -0.75" normal="0, 1, 0" uv="25.01, -3.002" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.25, 0, -1" normal="0, 1, 0" uv="32.01, -3.002" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0, 0, -1" normal="0, 1, 0" uv="32.01, 3.997" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.25, 0, -0.75" normal="0, 1, 0" uv="39.01, 3.997" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.5, 0, -0.75" normal="0, 1, 0" uv="32.01, 3.997" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.5, 0, -1" normal="0, 1, 0" uv="32.01, -3.002" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.25, 0, -1" normal="0, 1, 0" uv="39.01, -3.002" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.75, 0, 0.75" normal="0, 1, 0" uv="46.01, -45" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.5, 0, 1" normal="0, 1, 0" uv="39.01, -52" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.5, 0, 0.75" normal="0, 1, 0" uv="39.01, -45" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.75, 0, 0.75" normal="0, 1, 0" uv="11, -45" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.5, 0, 1" normal="0, 1, 0" uv="3.997, -45" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.5, 0, 0.75" normal="0, 1, 0" uv="11, -52" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-1, 0, 0.5" normal="0, 1, 0" uv="-3.007, -38" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.75, 0, 0.75" normal="0, 1, 0" uv="3.997, -45" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.75, 0, 0.5" normal="0, 1, 0" uv="3.997, -38" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.75, 0, -0.75" normal="0, 1, 0" uv="-3.007, -10" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-1, 0, -0.5" normal="0, 1, 0" uv="3.997, -10" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.75, 0, -0.5" normal="0, 1, 0" uv="3.997, -3.002" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.5, 0, -1" normal="0, 1, 0" uv="11, 3.997" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.75, 0, -0.75" normal="0, 1, 0" uv="3.997, -3.002" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.5, 0, -0.75" normal="0, 1, 0" uv="11, -3.002" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.75, 0, -0.75" normal="0, 1, 0" uv="39.01, -3.002" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.5, 0, -1" normal="0, 1, 0" uv="46.01, -3.002" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.5, 0, -0.75" normal="0, 1, 0" uv="39.01, 3.997" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="1, 0, -0.5" normal="0, 1, 0" uv="46.01, -3.002" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.75, 0, -0.75" normal="0, 1, 0" uv="46.01, -10" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.75, 0, -0.5" normal="0, 1, 0" uv="53.02, -10" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.75, 0, -0.5" normal="0, 1, 0" uv="39.01, -3.002" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.75, 0, -0.75" normal="0, 1, 0" uv="39.01, -10" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="0.5, 0, -0.75" normal="0, 1, 0" uv="46.01, -10" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.5, 0, -0.5" normal="0, 1, 0" uv="46.01, -3.002"/>
+		<Vertex position="-0.75, 0, -0.5" normal="0, 1, 0" uv="11, -3.002" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.5, 0, -0.5" normal="0, 1, 0" uv="3.997, -3.002"/>
+		<Vertex position="-0.5, 0, -0.75" normal="0, 1, 0" uv="3.997, -10" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.75, 0, -0.75" normal="0, 1, 0" uv="11, -10" color="0.3098, 0.3098, 0.3098, 1"/>
+		<Vertex position="-0.5, 0, 0.5" normal="0, 1, 0" uv="11, -38" color="0.5608, 0.5608, 0.5608, 1"/>
+		<Vertex position="0.5, 0, 0.75" normal="0, 1, 0" uv="32.01, -45" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.5, 0, 0.5" normal="0, 1, 0" uv="39.01, -45"/>
+		<Vertex position="0.25, 0, 0.5" normal="0, 1, 0" uv="39.01, -38"/>
+		<Vertex position="0.75, 0, 0.25" normal="0, 1, 0" uv="46.01, -38" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.5, 0, 0.25" normal="0, 1, 0" uv="46.01, -31"/>
+		<Vertex position="0.5, 0, 0.5" normal="0, 1, 0" uv="39.01, -31"/>
+		<Vertex position="0.75, 0, 0.5" normal="0, 1, 0" uv="39.01, -38" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.25, 0, 0.75" normal="0, 1, 0" uv="11, -45" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.25, 0, 0.5" normal="0, 1, 0" uv="18, -45"/>
+		<Vertex position="-0.5, 0, 0.5" normal="0, 1, 0" uv="18, -38" color="0.5608, 0.5608, 0.5608, 1"/>
+		<Vertex position="-0.5, 0, 0.75" normal="0, 1, 0" uv="11, -38" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="-0.5, 0, -0.25" normal="0, 1, 0" uv="11, -17"/>
+		<Vertex position="-0.5, 0, -0.5" normal="0, 1, 0" uv="11, -10"/>
+		<Vertex position="0.5, 0, -0.5" normal="0, 1, 0" uv="32.01, -10"/>
+		<Vertex position="0.5, 0, -0.75" normal="0, 1, 0" uv="39.01, -10" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.25, 0, -0.75" normal="0, 1, 0" uv="39.01, -3.002" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.25, 0, -0.5" normal="0, 1, 0" uv="32.01, -3.002"/>
+		<Vertex position="0.75, 0, -0.25" normal="0, 1, 0" uv="39.01, -17" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.75, 0, -0.5" normal="0, 1, 0" uv="46.01, -17" color="0.4392, 0.4392, 0.4392, 1"/>
+		<Vertex position="0.5, 0, -0.5" normal="0, 1, 0" uv="46.01, -10"/>
+		<Vertex position="0.5, 0, -0.25" normal="0, 1, 0" uv="39.01, -10"/>
+	</VertexBuffer>
+	<IndexBuffer name="batch0_ib">
+		<Triangle indices="0, 1, 2"/>
+		<Triangle indices="0, 2, 3"/>
+		<Triangle indices="3, 2, 4"/>
+		<Triangle indices="3, 4, 5"/>
+		<Triangle indices="5, 4, 6"/>
+		<Triangle indices="5, 6, 7"/>
+		<Triangle indices="7, 6, 8"/>
+		<Triangle indices="7, 8, 9"/>
+		<Triangle indices="9, 8, 10"/>
+		<Triangle indices="9, 10, 11"/>
+		<Triangle indices="11, 10, 12"/>
+		<Triangle indices="11, 12, 13"/>
+		<Triangle indices="13, 12, 14"/>
+		<Triangle indices="13, 14, 15"/>
+		<Triangle indices="15, 14, 16"/>
+		<Triangle indices="15, 16, 17"/>
+		<Triangle indices="17, 16, 18"/>
+		<Triangle indices="17, 18, 19"/>
+		<Triangle indices="19, 18, 20"/>
+		<Triangle indices="19, 20, 21"/>
+		<Triangle indices="21, 20, 22"/>
+		<Triangle indices="21, 22, 23"/>
+		<Triangle indices="23, 22, 24"/>
+		<Triangle indices="23, 24, 25"/>
+		<Triangle indices="25, 24, 26"/>
+		<Triangle indices="25, 26, 27"/>
+		<Triangle indices="27, 26, 28"/>
+		<Triangle indices="27, 28, 29"/>
+		<Triangle indices="29, 28, 30"/>
+		<Triangle indices="29, 30, 31"/>
+		<Triangle indices="31, 30, 32"/>
+		<Triangle indices="31, 32, 33"/>
+		<Triangle indices="33, 32, 34"/>
+		<Triangle indices="33, 34, 35"/>
+		<Triangle indices="35, 34, 36"/>
+		<Triangle indices="35, 36, 37"/>
+		<Triangle indices="37, 36, 38"/>
+		<Triangle indices="37, 38, 39"/>
+		<Triangle indices="39, 38, 40"/>
+		<Triangle indices="39, 40, 41"/>
+		<Triangle indices="41, 40, 42"/>
+		<Triangle indices="41, 42, 43"/>
+		<Triangle indices="1, 44, 45"/>
+		<Triangle indices="1, 45, 2"/>
+		<Triangle indices="2, 45, 46"/>
+		<Triangle indices="2, 46, 4"/>
+		<Triangle indices="4, 46, 47"/>
+		<Triangle indices="4, 47, 6"/>
+		<Triangle indices="6, 47, 48"/>
+		<Triangle indices="6, 48, 8"/>
+		<Triangle indices="8, 48, 49"/>
+		<Triangle indices="8, 49, 10"/>
+		<Triangle indices="10, 49, 50"/>
+		<Triangle indices="10, 50, 12"/>
+		<Triangle indices="12, 50, 51"/>
+		<Triangle indices="12, 51, 14"/>
+		<Triangle indices="14, 51, 52"/>
+		<Triangle indices="14, 52, 16"/>
+		<Triangle indices="16, 52, 53"/>
+		<Triangle indices="16, 53, 18"/>
+		<Triangle indices="18, 53, 54"/>
+		<Triangle indices="18, 54, 20"/>
+		<Triangle indices="20, 54, 55"/>
+		<Triangle indices="20, 55, 22"/>
+		<Triangle indices="22, 55, 56"/>
+		<Triangle indices="22, 56, 24"/>
+		<Triangle indices="24, 56, 57"/>
+		<Triangle indices="24, 57, 26"/>
+		<Triangle indices="26, 57, 58"/>
+		<Triangle indices="26, 58, 28"/>
+		<Triangle indices="28, 58, 59"/>
+		<Triangle indices="28, 59, 30"/>
+		<Triangle indices="30, 59, 60"/>
+		<Triangle indices="30, 60, 32"/>
+		<Triangle indices="32, 60, 61"/>
+		<Triangle indices="32, 61, 34"/>
+		<Triangle indices="34, 61, 62"/>
+		<Triangle indices="34, 62, 36"/>
+		<Triangle indices="36, 62, 63"/>
+		<Triangle indices="36, 63, 38"/>
+		<Triangle indices="38, 63, 64"/>
+		<Triangle indices="38, 64, 40"/>
+		<Triangle indices="40, 64, 65"/>
+		<Triangle indices="40, 65, 42"/>
+		<Triangle indices="66, 33, 35"/>
+		<Triangle indices="66, 35, 67"/>
+		<Triangle indices="66, 67, 68"/>
+		<Triangle indices="66, 68, 69"/>
+		<Triangle indices="66, 69, 70"/>
+		<Triangle indices="66, 70, 71"/>
+		<Triangle indices="66, 71, 31"/>
+		<Triangle indices="66, 31, 33"/>
+		<Triangle indices="67, 35, 37"/>
+		<Triangle indices="67, 37, 72"/>
+		<Triangle indices="67, 72, 73"/>
+		<Triangle indices="67, 73, 68"/>
+		<Triangle indices="71, 70, 74"/>
+		<Triangle indices="71, 74, 75"/>
+		<Triangle indices="71, 75, 29"/>
+		<Triangle indices="71, 29, 31"/>
+		<Triangle indices="72, 37, 39"/>
+		<Triangle indices="72, 39, 76"/>
+		<Triangle indices="72, 76, 77"/>
+		<Triangle indices="72, 77, 73"/>
+		<Triangle indices="75, 74, 78"/>
+		<Triangle indices="75, 78, 79"/>
+		<Triangle indices="75, 79, 27"/>
+		<Triangle indices="75, 27, 29"/>
+		<Triangle indices="76, 39, 41"/>
+		<Triangle indices="76, 41, 80"/>
+		<Triangle indices="76, 80, 81"/>
+		<Triangle indices="76, 81, 77"/>
+		<Triangle indices="79, 78, 82"/>
+		<Triangle indices="79, 82, 83"/>
+		<Triangle indices="79, 83, 25"/>
+		<Triangle indices="79, 25, 27"/>
+		<Triangle indices="80, 41, 43"/>
+		<Triangle indices="80, 43, 84"/>
+		<Triangle indices="80, 84, 85"/>
+		<Triangle indices="80, 85, 81"/>
+		<Triangle indices="83, 82, 86"/>
+		<Triangle indices="83, 86, 87"/>
+		<Triangle indices="83, 87, 23"/>
+		<Triangle indices="83, 23, 25"/>
+		<Triangle indices="88, 0, 3"/>
+		<Triangle indices="88, 3, 89"/>
+		<Triangle indices="88, 89, 90"/>
+		<Triangle indices="88, 90, 91"/>
+		<Triangle indices="87, 86, 92"/>
+		<Triangle indices="87, 92, 93"/>
+		<Triangle indices="87, 93, 21"/>
+		<Triangle indices="87, 21, 23"/>
+		<Triangle indices="89, 3, 5"/>
+		<Triangle indices="89, 5, 94"/>
+		<Triangle indices="89, 94, 95"/>
+		<Triangle indices="89, 95, 90"/>
+		<Triangle indices="93, 92, 96"/>
+		<Triangle indices="93, 96, 97"/>
+		<Triangle indices="93, 97, 19"/>
+		<Triangle indices="93, 19, 21"/>
+		<Triangle indices="94, 5, 7"/>
+		<Triangle indices="94, 7, 98"/>
+		<Triangle indices="94, 98, 99"/>
+		<Triangle indices="94, 99, 95"/>
+		<Triangle indices="97, 96, 100"/>
+		<Triangle indices="97, 100, 101"/>
+		<Triangle indices="97, 101, 17"/>
+		<Triangle indices="97, 17, 19"/>
+		<Triangle indices="98, 7, 9"/>
+		<Triangle indices="98, 9, 102"/>
+		<Triangle indices="98, 102, 103"/>
+		<Triangle indices="98, 103, 99"/>
+		<Triangle indices="101, 100, 104"/>
+		<Triangle indices="101, 104, 105"/>
+		<Triangle indices="101, 105, 15"/>
+		<Triangle indices="101, 15, 17"/>
+		<Triangle indices="102, 9, 11"/>
+		<Triangle indices="102, 11, 106"/>
+		<Triangle indices="102, 106, 107"/>
+		<Triangle indices="102, 107, 103"/>
+		<Triangle indices="105, 104, 108"/>
+		<Triangle indices="105, 108, 109"/>
+		<Triangle indices="105, 109, 13"/>
+		<Triangle indices="105, 13, 15"/>
+		<Triangle indices="106, 11, 13"/>
+		<Triangle indices="106, 13, 109"/>
+		<Triangle indices="106, 109, 108"/>
+		<Triangle indices="106, 108, 107"/>
+		<Triangle indices="110, 111, 112"/>
+		<Triangle indices="110, 112, 113"/>
+		<Triangle indices="114, 115, 116"/>
+		<Triangle indices="114, 116, 117"/>
+		<Triangle indices="118, 119, 120"/>
+		<Triangle indices="118, 120, 121"/>
+		<Triangle indices="122, 123, 124"/>
+		<Triangle indices="122, 124, 125"/>
+		<Triangle indices="112, 121, 126"/>
+		<Triangle indices="112, 126, 127"/>
+		<Triangle indices="128, 129, 130"/>
+		<Triangle indices="128, 130, 131"/>
+		<Triangle indices="132, 133, 134"/>
+		<Triangle indices="132, 134, 135"/>
+		<Triangle indices="136, 137, 138"/>
+		<Triangle indices="136, 138, 139"/>
+		<Triangle indices="140, 141, 142"/>
+		<Triangle indices="140, 142, 143"/>
+		<Triangle indices="126, 144, 145"/>
+		<Triangle indices="126, 145, 146"/>
+		<Triangle indices="144, 147, 148"/>
+		<Triangle indices="144, 148, 145"/>
+		<Triangle indices="149, 150, 151"/>
+		<Triangle indices="149, 151, 152"/>
+		<Triangle indices="153, 154, 155"/>
+		<Triangle indices="153, 155, 156"/>
+		<Triangle indices="157, 158, 159"/>
+		<Triangle indices="157, 159, 160"/>
+		<Triangle indices="161, 162, 163"/>
+		<Triangle indices="161, 163, 164"/>
+		<Triangle indices="165, 166, 167"/>
+		<Triangle indices="165, 167, 168"/>
+		<Triangle indices="146, 145, 169"/>
+		<Triangle indices="146, 169, 170"/>
+		<Triangle indices="171, 172, 173"/>
+		<Triangle indices="171, 173, 174"/>
+		<Triangle indices="148, 152, 175"/>
+		<Triangle indices="148, 175, 176"/>
+		<Triangle indices="152, 151, 177"/>
+		<Triangle indices="152, 177, 175"/>
+		<Triangle indices="156, 155, 178"/>
+		<Triangle indices="156, 178, 179"/>
+		<Triangle indices="180, 181, 182"/>
+		<Triangle indices="180, 182, 183"/>
+		<Triangle indices="184, 185, 186"/>
+		<Triangle indices="184, 186, 187"/>
+		<Triangle indices="163, 170, 188"/>
+		<Triangle indices="163, 188, 189"/>
+		<Triangle indices="190, 191, 192"/>
+		<Triangle indices="190, 192, 193"/>
+		<Triangle indices="169, 176, 194"/>
+		<Triangle indices="169, 194, 195"/>
+		<Triangle indices="196, 197, 198"/>
+		<Triangle indices="196, 198, 199"/>
+		<Triangle indices="175, 177, 200"/>
+		<Triangle indices="175, 200, 201"/>
+		<Triangle indices="179, 178, 202"/>
+		<Triangle indices="179, 202, 203"/>
+		<Triangle indices="204, 205, 206"/>
+		<Triangle indices="204, 206, 207"/>
+		<Triangle indices="189, 188, 208"/>
+		<Triangle indices="189, 208, 209"/>
+		<Triangle indices="210, 211, 212"/>
+		<Triangle indices="210, 212, 213"/>
+		<Triangle indices="195, 194, 214"/>
+		<Triangle indices="195, 214, 215"/>
+		<Triangle indices="201, 200, 216"/>
+		<Triangle indices="201, 216, 217"/>
+		<Triangle indices="218, 219, 220"/>
+		<Triangle indices="218, 220, 221"/>
+		<Triangle indices="222, 223, 224"/>
+		<Triangle indices="222, 224, 225"/>
+		<Triangle indices="226, 227, 228"/>
+		<Triangle indices="226, 228, 229"/>
+		<Triangle indices="230, 231, 232"/>
+		<Triangle indices="230, 232, 233"/>
+		<Triangle indices="234, 235, 236"/>
+		<Triangle indices="234, 236, 237"/>
+		<Triangle indices="238, 239, 240"/>
+		<Triangle indices="238, 240, 241"/>
+		<Triangle indices="242, 150, 149"/>
+		<Triangle indices="243, 242, 244"/>
+		<Triangle indices="245, 246, 247"/>
+		<Triangle indices="248, 249, 250"/>
+		<Triangle indices="251, 252, 253"/>
+		<Triangle indices="254, 255, 256"/>
+		<Triangle indices="257, 258, 259"/>
+		<Triangle indices="260, 261, 262"/>
+		<Triangle indices="263, 264, 265"/>
+		<Triangle indices="263, 265, 266"/>
+		<Triangle indices="267, 268, 269"/>
+		<Triangle indices="267, 269, 270"/>
+		<Triangle indices="113, 271, 250"/>
+		<Triangle indices="113, 250, 249"/>
+		<Triangle indices="149, 147, 244"/>
+		<Triangle indices="149, 244, 242"/>
+		<Triangle indices="129, 272, 273"/>
+		<Triangle indices="129, 273, 274"/>
+		<Triangle indices="275, 276, 277"/>
+		<Triangle indices="275, 277, 278"/>
+		<Triangle indices="279, 280, 281"/>
+		<Triangle indices="279, 281, 282"/>
+		<Triangle indices="154, 250, 271"/>
+		<Triangle indices="154, 271, 161"/>
+		<Triangle indices="178, 283, 284"/>
+		<Triangle indices="178, 284, 202"/>
+		<Triangle indices="230, 256, 284"/>
+		<Triangle indices="230, 284, 209"/>
+		<Triangle indices="285, 286, 287"/>
+		<Triangle indices="285, 287, 288"/>
+		<Triangle indices="289, 290, 291"/>
+		<Triangle indices="289, 291, 292"/>
+	</IndexBuffer>
+	<Batch
+	name="batch0_0"
+	vertexBuffer="batch0_vb"
+	indexBuffer="batch0_ib"
+	bufferOffset="0"
+	primitiveNumber="168"
+	diffuseColor="1.0, 1.0, 1.0"
+	transparency="1"
+	specularColor="0, 0, 0"
+	specularSharpness="5"
+	emissionColor="0, 0, 0"
+	lighting="none"
+	texture="skySphere"/>
+	<Texture name="skySphere" filename="skySphere.tga"/>
+	<Batch
+	name="batch0_1"
+	vertexBuffer="batch0_vb"
+	indexBuffer="batch0_ib"
+	bufferOffset="504"
+	primitiveNumber="112"
+	diffuseColor="0.8, 0.8, 0.8"
+	transparency="1"
+	specularColor="0.2, 0.2, 0.2"
+	specularSharpness="5"
+	emissionColor="0, 0, 0"
+	texture="tile"/>
+	<Texture name="tile" filename="tile.tga"/>
+</Container>

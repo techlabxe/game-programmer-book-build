@@ -1,0 +1,52 @@
+<VertexBuffer name="vb">
+	<Vertex position="-1, -1, -1" normal="-1, 0, 0"/>
+	<Vertex position="-1, -1, 1" normal="-1, 0, 0"/>
+	<Vertex position="-1, 1, -1" normal="-1, 0, 0"/>
+	<Vertex position="-1, 1, 1" normal="-1, 0, 0"/>
+
+	<Vertex position="1, -1, 1" normal="1, 0, 0"/>
+	<Vertex position="1, -1, -1" normal="1, 0, 0"/>
+	<Vertex position="1, 1, 1" normal="1, 0, 0"/>
+	<Vertex position="1, 1, -1" normal="1, 0, 0"/>
+
+	<Vertex position="-1, -1, 1" normal="0, -1, 0"/>
+	<Vertex position="-1, -1, -1" normal="0, -1, 0"/>
+	<Vertex position="1, -1, 1" normal="0, -1, 0"/>
+	<Vertex position="1, -1, -1" normal="0, -1, 0"/>
+
+	<Vertex position="-1, 1, -1" normal="0, 1, 0"/>
+	<Vertex position="-1, 1, 1" normal="0, 1, 0"/>
+	<Vertex position="1, 1, -1" normal="0, 1, 0"/>
+	<Vertex position="1, 1, 1" normal="0, 1, 0"/>
+
+	<Vertex position="-1, -1, -1" normal="0, 0, -1"/>
+	<Vertex position="-1, 1, -1" normal="0, 0, -1"/>
+	<Vertex position="1, -1, -1" normal="0, 0, -1"/>
+	<Vertex position="1, 1, -1" normal="0, 0, -1"/>
+
+	<Vertex position="-1, 1, 1" normal="0, 0, 1"/>
+	<Vertex position="-1,-1, 1" normal="0, 0, 1"/>
+	<Vertex position="1, 1, 1" normal="0, 0, 1"/>
+	<Vertex position="1, -1, 1" normal="0, 0, 1"/>
+</VertexBuffer>
+<IndexBuffer name="ib">
+	<Triangle indices="0, 1, 2"/>
+	<Triangle indices="3, 2, 1"/>
+	<Triangle indices="4, 5, 6"/>
+	<Triangle indices="7, 6, 5"/>
+	<Triangle indices="8, 9, 10"/>
+	<Triangle indices="11, 10, 9"/>
+	<Triangle indices="12, 13, 14"/>
+	<Triangle indices="15, 14, 13"/>
+	<Triangle indices="16, 17, 18"/>
+	<Triangle indices="19, 18, 17"/>
+	<Triangle indices="20, 21, 22"/>
+	<Triangle indices="23, 22, 21"/>
+</IndexBuffer>
+<Batch 
+	name="cube"
+	vertexBuffer="vb"
+	indexBuffer="ib"
+	blend="linear"
+	specularSharpness="20"
+	specularColor="1,1,1"/>

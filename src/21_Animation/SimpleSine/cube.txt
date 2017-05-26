@@ -1,0 +1,29 @@
+<VertexBuffer name="vb">
+	<Vertex position="-1, -1, -1"/>
+	<Vertex position="-1, -1, 1"/>
+	<Vertex position="-1, 1, -1"/>
+	<Vertex position="-1, 1, 1"/>
+	<Vertex position="1, -1, -1"/>
+	<Vertex position="1, -1, 1"/>
+	<Vertex position="1, 1, -1"/>
+	<Vertex position="1, 1, 1"/>
+</VertexBuffer>
+<IndexBuffer name="ib">
+	<Triangle indices="0, 1, 2"/>
+	<Triangle indices="3, 2, 1"/>
+	<Triangle indices="6, 5, 4"/>
+	<Triangle indices="5, 6, 7"/>
+	<Triangle indices="2, 3, 6"/>
+	<Triangle indices="3, 7, 6"/>
+	<Triangle indices="5, 1, 0"/>
+	<Triangle indices="0, 4, 5"/>
+	<Triangle indices="7, 3, 1"/>
+	<Triangle indices="7, 1, 5"/>
+	<Triangle indices="2, 6, 4"/>
+	<Triangle indices="4, 0, 2"/>
+</IndexBuffer>
+<Batch 
+	name="cube"
+	vertexBuffer="vb"
+	indexBuffer="ib"
+	blend="opaque"/>

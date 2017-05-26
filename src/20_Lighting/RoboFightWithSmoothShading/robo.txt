@@ -1,0 +1,47 @@
+<VertexBuffer name="vb">
+	<Vertex position="-0.5, -0, -0.5"/>
+	<Vertex position="-0.5, -0, 0.5"/>
+	<Vertex position="-0.5, 2, -0.5"/>
+	<Vertex position="-0.5, 2, 0.5"/>
+	<Vertex position="0.5, -0, -0.5"/>
+	<Vertex position="0.5, -0, 0.5"/>
+	<Vertex position="0.5, 2, -0.5"/>
+	<Vertex position="0.5, 2, 0.5"/>
+</VertexBuffer>
+<IndexBuffer name="ib">
+	<Triangle indices="0, 1, 2"/>
+	<Triangle indices="3, 2, 1"/>
+	<Triangle indices="6, 5, 4"/>
+	<Triangle indices="5, 6, 7"/>
+	<Triangle indices="2, 3, 6"/>
+	<Triangle indices="3, 7, 6"/>
+	<Triangle indices="5, 1, 0"/>
+	<Triangle indices="0, 4, 5"/>
+	<Triangle indices="7, 3, 1"/>
+	<Triangle indices="7, 1, 5"/>
+	<Triangle indices="2, 6, 4"/>
+	<Triangle indices="4, 0, 2"/>
+</IndexBuffer>
+<Batch 
+	name="robo"
+	vertexBuffer="vb"
+	indexBuffer="ib"
+	blend="opaque"/>
+
+<VertexBuffer name="bullet">
+	<Vertex position="0, 0, 0.5"/>
+	<Vertex position="0, 0.5, 0"/>
+	<Vertex position="0.43, -0.25, 0"/>
+	<Vertex position="-0.43, -0.25, 0"/>
+</VertexBuffer>
+<IndexBuffer name="bullet">
+	<Triangle indices="0,1,2"/>
+	<Triangle indices="0,1,3"/>
+	<Triangle indices="0,2,3"/>
+	<Triangle indices="1,2,3"/>
+</IndexBuffer>
+<Batch 
+	name="bullet"
+	vertexBuffer="bullet"
+	indexBuffer="bullet"
+	blend="additive"/>

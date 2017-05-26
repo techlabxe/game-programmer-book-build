@@ -1,0 +1,29 @@
+VisualStudio2010以降に対応する際に、一部不完全な所や、
+変更を加えた点があります。
+
+0.sin,cos等の呼び出し
+
+C/C++標準ライブラリを使った場合、
+標準のsin(),cos()等と、GameLibが持つsin(),cos()等が
+衝突することがあります。このような場合、
+GameLib::sin()のようにGameLib::をつけて区別をします。
+Finalライブラリを使っている場合、
+GameLib::Math::sin()となります。
+
+2008まではmath.hをインクルードしない限りこの問題は起こりませんでしたが、
+2010ではsstream,string等をインクルードしても中からmath.h
+がインクルードされるためこの問題が発生します。
+
+1.内部構造
+
+以前はModules.slnの下にMath,Graphicsなどの複数のプロジェクトがありましたが、
+統合してあります。
+
+2.DebugStreamのstring対応
+
+2008までstd::stringをcoutにそのまま渡せましたが、
+2010版では渡せません。
+
+cout << s.c_str();
+
+というように、c_str()を読んでconst char*を取り出してから渡してください。

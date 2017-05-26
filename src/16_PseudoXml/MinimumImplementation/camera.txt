@@ -1,0 +1,6 @@
+<CameraData>
+	<Position x="-16.8638" y="10" z="10.7524">
+	</Position>
+	<Target x="0" y="0" z="0">
+	</Target>
+</CameraData>

@@ -1,0 +1,4 @@
+<Data>
+	<SomeElement0 name="value" intValue="1" floatValue="2.3199999"/>
+	<SomeElement1 intArray="0, 1, 2, 3, 4" floatArray="1, 0.5, 0.3333"/>
+</Data>

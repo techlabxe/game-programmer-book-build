@@ -1,0 +1,53 @@
+<VertexBuffer name="vb">
+	<Vertex position="0.5, 2, 0.5" uv="0, 0"/>
+	<Vertex position="-0.5, 2, 0.5" uv="0.25, 0"/>
+	<Vertex position="0.5, 0, 0.5" uv="0, 0.5"/>
+	<Vertex position="-0.5, 0, 0.5" uv="0.25, 0.5"/>
+
+	<Vertex position="-0.5, 2, -0.5" uv="0.25, 0"/>
+	<Vertex position="0.5, 2, -0.5" uv="0.5, 0"/>
+	<Vertex position="-0.5, 0, -0.5" uv="0.25, 0.5"/>
+	<Vertex position="0.5, 0, -0.5" uv="0.5, 0.5"/>
+
+	<Vertex position="-0.5, 2, 0.5" uv="0.5, 0"/>
+	<Vertex position="-0.5, 2, -0.5" uv="0.75, 0"/>
+	<Vertex position="-0.5, 0, 0.5" uv="0.5, 0.5"/>
+	<Vertex position="-0.5, 0, -0.5" uv="0.75, 0.5"/>
+
+	<Vertex position="0.5, 2, -0.5" uv="0.75, 0"/>
+	<Vertex position="0.5, 2, 0.5" uv="1, 0"/>
+	<Vertex position="0.5, 0, -0.5" uv="0.75, 0.5"/>
+	<Vertex position="0.5, 0, 0.5" uv="1, 0.5"/>
+
+	<Vertex position="0.5, 2, -0.5" uv="0, 0.5"/>
+	<Vertex position="-0.5, 2, -0.5" uv="0.25, 0.5"/>
+	<Vertex position="0.5, 2, 0.5" uv="0, 0.75"/>
+	<Vertex position="-0.5, 2, 0.5" uv="0.25, 0.75"/>
+
+	<Vertex position="-0.5, 0, -0.5" uv="0.25, 0.5"/>
+	<Vertex position="0.5, 0, -0.5" uv="0.5, 0.5"/>
+	<Vertex position="-0.5, 0, 0.5" uv="0.25, 0.75"/>
+	<Vertex position="0.5, 0, 0.5" uv="0.5, 0.75"/>
+</VertexBuffer>
+<IndexBuffer name="ib">
+	<Triangle indices="0, 2, 1"/>
+	<Triangle indices="3, 2, 1"/>
+	<Triangle indices="4, 6, 5"/>
+	<Triangle indices="7, 6, 5"/>
+	<Triangle indices="8, 10, 9"/>
+	<Triangle indices="11, 10, 9"/>
+	<Triangle indices="12, 14, 13"/>
+	<Triangle indices="15, 14, 13"/>
+	<Triangle indices="16, 18, 17"/>
+	<Triangle indices="19, 18, 17"/>
+	<Triangle indices="20, 22, 21"/>
+	<Triangle indices="23, 22, 21"/>
+</IndexBuffer>
+<Texture name="texture" filename="robo.tga"/>
+<Batch 
+	name="robo"
+	vertexBuffer="vb"
+	indexBuffer="ib"
+	texture="texture"
+	blend="opaque">
+</Batch>

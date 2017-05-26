@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\GameLib\Base\Array.h" />
+    <ClInclude Include="..\include\GameLib\Base\Array2d.h" />
+    <ClInclude Include="..\include\GameLib\Base\AutoPtr.h" />
+    <ClInclude Include="..\include\GameLib\Base\Compressor.h" />
+    <ClInclude Include="..\include\GameLib\Base\Conversion.h" />
+    <ClInclude Include="..\include\GameLib\Base\DebugStream.h" />
+    <ClInclude Include="..\include\GameLib\Base\Hash.h" />
+    <ClInclude Include="..\include\GameLib\Base\HashMap.h" />
+    <ClInclude Include="..\include\GameLib\Base\HashMultiMap.h" />
+    <ClInclude Include="..\include\GameLib\Base\HashSet.h" />
+    <ClInclude Include="..\include\GameLib\Base\IBinaryStream.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\Array2dImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\ArrayImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\AutoPtrImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\ConstantTypeTemplate.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\HashImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\HashMapImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\HashMultiMapImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\HashSetImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\ListImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\OStringStreamImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\PoolImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\QueueImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\ReferenceType.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\ReferenceTypeTemplate.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\SharedPtrImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\StackImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\TankImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\Impl\VectorImpl.h" />
+    <ClInclude Include="..\include\GameLib\Base\List.h" />
+    <ClInclude Include="..\include\GameLib\Base\MemoryManager.h" />
+    <ClInclude Include="..\include\GameLib\Base\OStringStream.h" />
+    <ClInclude Include="..\include\GameLib\Base\Pool.h" />
+    <ClInclude Include="..\include\GameLib\Base\PrimeNumber.h" />
+    <ClInclude Include="..\include\GameLib\Base\Queue.h" />
+    <ClInclude Include="..\include\GameLib\Base\RefString.h" />
+    <ClInclude Include="..\include\GameLib\Base\SharedPtr.h" />
+    <ClInclude Include="..\include\GameLib\Base\Stack.h" />
+    <ClInclude Include="..\include\GameLib\Base\Tank.h" />
+    <ClInclude Include="..\include\GameLib\Base\Vector.h" />
+    <ClInclude Include="..\include\GameLib\FileIO\InFile.h" />
+    <ClInclude Include="..\include\GameLib\FileIO\Manager.h" />
+    <ClInclude Include="..\include\GameLib\FileIO\OutFile.h" />
+    <ClInclude Include="..\include\GameLib\Graphics\Enum.h" />
+    <ClInclude Include="..\include\GameLib\Graphics\IndexBuffer.h" />
+    <ClInclude Include="..\include\GameLib\Graphics\Manager.h" />
+    <ClInclude Include="..\include\GameLib\Graphics\Texture.h" />
+    <ClInclude Include="..\include\GameLib\Graphics\Vertex.h" />
+    <ClInclude Include="..\include\GameLib\Graphics\VertexBuffer.h" />
+    <ClInclude Include="..\include\GameLib\Input\Joystick.h" />
+    <ClInclude Include="..\include\GameLib\Input\Keyboard.h" />
+    <ClInclude Include="..\include\GameLib\Input\Manager.h" />
+    <ClInclude Include="..\include\GameLib\Input\Mouse.h" />
+    <ClInclude Include="..\include\GameLib\Math\Functions.h" />
+    <ClInclude Include="..\include\GameLib\Math\Matrix22.h" />
+    <ClInclude Include="..\include\GameLib\Math\Matrix23.h" />
+    <ClInclude Include="..\include\GameLib\Math\Matrix33.h" />
+    <ClInclude Include="..\include\GameLib\Math\Matrix34.h" />
+    <ClInclude Include="..\include\GameLib\Math\Matrix44.h" />
+    <ClInclude Include="..\include\GameLib\Math\Random.h" />
+    <ClInclude Include="..\include\GameLib\Math\Vector2.h" />
+    <ClInclude Include="..\include\GameLib\Math\Vector3.h" />
+    <ClInclude Include="..\include\GameLib\Math\Vector4.h" />
+    <ClInclude Include="..\include\GameLib\PseudoXml\Attribute.h" />
+    <ClInclude Include="..\include\GameLib\PseudoXml\Document.h" />
+    <ClInclude Include="..\include\GameLib\PseudoXml\Element.h" />
+    <ClInclude Include="..\include\GameLib\Scene\Animation.h" />
+    <ClInclude Include="..\include\GameLib\Scene\Batch.h" />
+    <ClInclude Include="..\include\GameLib\Scene\CollisionDetector.h" />
+    <ClInclude Include="..\include\GameLib\Scene\CollisionMesh.h" />
+    <ClInclude Include="..\include\GameLib\Scene\Container.h" />
+    <ClInclude Include="..\include\GameLib\Scene\Font.h" />
+    <ClInclude Include="..\include\GameLib\Scene\Model.h" />
+    <ClInclude Include="..\include\GameLib\Scene\PrimitiveRenderer.h" />
+    <ClInclude Include="..\include\GameLib\Scene\StringRenderer.h" />
+    <ClInclude Include="..\include\GameLib\Scene\Tree.h" />
+    <ClInclude Include="..\include\GameLib\Sound\Manager.h" />
+    <ClInclude Include="..\include\GameLib\Sound\Player.h" />
+    <ClInclude Include="..\include\GameLib\Sound\Wave.h" />
+    <ClInclude Include="..\include\GameLib\Threading\Event.h" />
+    <ClInclude Include="..\include\GameLib\Threading\Functions.h" />
+    <ClInclude Include="..\include\GameLib\Threading\Manager.h" />
+    <ClInclude Include="..\include\GameLib\Threading\Mutex.h" />
+    <ClInclude Include="..\include\GameLib\Threading\Semaphore.h" />
+    <ClInclude Include="..\include\GameLib\Threading\Thread.h" />
+    <ClInclude Include="..\include\GameLib\WindowCreator\WindowCreator.h" />
+    <ClInclude Include="include\GameLib\GameLib.h" />
+    <ClInclude Include="src\FileIO\Archive.h" />
+    <ClInclude Include="src\FileIO\InFileImpl.h" />
+    <ClInclude Include="src\FileIO\ManagerImpl.h" />
+    <ClInclude Include="src\FileIO\OutFileImpl.h" />
+    <ClInclude Include="src\Graphics\IndexBufferImpl.h" />
+    <ClInclude Include="src\Graphics\ManagerImpl.h" />
+    <ClInclude Include="src\Graphics\NoLightingVsGenerated.h" />
+    <ClInclude Include="src\Graphics\PixelLightingPsGenerated.h" />
+    <ClInclude Include="src\Graphics\PixelLightingVsGenerated.h" />
+    <ClInclude Include="src\Graphics\TextureImpl.h" />
+    <ClInclude Include="src\Graphics\VertexBufferImpl.h" />
+    <ClInclude Include="src\Graphics\VertexLightingVsGenerated.h" />
+    <ClInclude Include="src\Input\JoystickImpl.h" />
+    <ClInclude Include="src\Input\ManagerImpl.h" />
+    <ClInclude Include="src\PseudoXml\AttributeImpl.h" />
+    <ClInclude Include="src\PseudoXml\DocumentImpl.h" />
+    <ClInclude Include="src\PseudoXml\ElementImpl.h" />
+    <ClInclude Include="src\PseudoXml\Tag.h" />
+    <ClInclude Include="src\Scene\AnimationImpl.h" />
+    <ClInclude Include="src\Scene\AnimationNode.h" />
+    <ClInclude Include="src\Scene\BatchImpl.h" />
+    <ClInclude Include="src\Scene\ContainerImpl.h" />
+    <ClInclude Include="src\Scene\Curve.h" />
+    <ClInclude Include="src\Scene\FontImpl.h" />
+    <ClInclude Include="src\Scene\FontImplBitmap.h" />
+    <ClInclude Include="src\Scene\FontImplOS.h" />
+    <ClInclude Include="src\Scene\ModelImpl.h" />
+    <ClInclude Include="src\Scene\Node.h" />
+    <ClInclude Include="src\Scene\NodeTemplate.h" />
+    <ClInclude Include="src\Scene\TreeImpl.h" />
+    <ClInclude Include="src\Scene\TreeTemplate.h" />
+    <ClInclude Include="src\Sound\ManagerImpl.h" />
+    <ClInclude Include="src\Sound\PlayerImpl.h" />
+    <ClInclude Include="src\Sound\WaveImpl.h" />
+    <ClInclude Include="src\Threading\ManagerImpl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Base\Compressor.cpp" />
+    <ClCompile Include="src\Base\Conversion.cpp" />
+    <ClCompile Include="src\Base\DebugStream.cpp" />
+    <ClCompile Include="src\Base\Halt.cpp" />
+    <ClCompile Include="src\Base\IBinaryStream.cpp" />
+    <ClCompile Include="src\Base\MemoryManager.cpp" />
+    <ClCompile Include="src\Base\OStringStream.cpp" />
+    <ClCompile Include="src\Base\PrimeNumber.cpp" />
+    <ClCompile Include="src\Base\RefString.cpp" />
+    <ClCompile Include="src\FileIO\InFile.cpp" />
+    <ClCompile Include="src\FileIO\Manager.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)FileIOManager.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)FileIOManager.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\FileIO\OutFile.cpp" />
+    <ClCompile Include="src\Graphics\IndexBuffer.cpp" />
+    <ClCompile Include="src\Graphics\Manager.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)GraphicsManager.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)GraphicsManager.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\Texture.cpp" />
+    <ClCompile Include="src\Graphics\VertexBuffer.cpp" />
+    <ClCompile Include="src\Input\Joystick.cpp" />
+    <ClCompile Include="src\Input\Keyboard.cpp" />
+    <ClCompile Include="src\Input\Manager.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)InputManaegr.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)InputManaegr.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Input\Mouse.cpp" />
+    <ClCompile Include="src\Math\Functions.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)MathFunctions.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)MathFunctions.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Math\Matrix22.cpp" />
+    <ClCompile Include="src\Math\Matrix23.cpp" />
+    <ClCompile Include="src\Math\Matrix33.cpp" />
+    <ClCompile Include="src\Math\Matrix34.cpp" />
+    <ClCompile Include="src\Math\Matrix44.cpp" />
+    <ClCompile Include="src\Math\Random.cpp" />
+    <ClCompile Include="src\Math\vector2.cpp" />
+    <ClCompile Include="src\Math\Vector3.cpp" />
+    <ClCompile Include="src\Math\Vector4.cpp" />
+    <ClCompile Include="src\PseudoXml\Attribute.cpp" />
+    <ClCompile Include="src\PseudoXml\Document.cpp" />
+    <ClCompile Include="src\PseudoXml\DocumentImpl.cpp" />
+    <ClCompile Include="src\PseudoXml\Element.cpp" />
+    <ClCompile Include="src\PseudoXml\Tag.cpp" />
+    <ClCompile Include="src\Scene\Animation.cpp" />
+    <ClCompile Include="src\Scene\AnimationNode.cpp" />
+    <ClCompile Include="src\Scene\Batch.cpp" />
+    <ClCompile Include="src\Scene\CollisionDetector.cpp" />
+    <ClCompile Include="src\Scene\CollisionMesh.cpp" />
+    <ClCompile Include="src\Scene\Container.cpp" />
+    <ClCompile Include="src\Scene\Font.cpp" />
+    <ClCompile Include="src\Scene\Model.cpp" />
+    <ClCompile Include="src\Scene\PrimitiveRenderer.cpp" />
+    <ClCompile Include="src\Scene\StringRenderer.cpp" />
+    <ClCompile Include="src\Scene\Tree.cpp" />
+    <ClCompile Include="src\Scene\TreeTemplate.cpp" />
+    <ClCompile Include="src\Sound\Manager.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)SoundManager.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)SoundManager.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Sound\Player.cpp" />
+    <ClCompile Include="src\Sound\Wave.cpp" />
+    <ClCompile Include="src\Threading\Event.cpp" />
+    <ClCompile Include="src\Threading\Functions.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)ThreadingFunctions.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)ThreadingFunctions.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Threading\Manager.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)ThreadingManager.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)ThreadingManager.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Threading\Mutex.cpp" />
+    <ClCompile Include="src\Threading\Semaphore.cpp" />
+    <ClCompile Include="src\Threading\Thread.cpp" />
+    <ClCompile Include="src\WindowCreator\WindowCreator.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2F92BC47-1405-4469-9E36-E4115F66FAB9}</ProjectGuid>
+    <RootNamespace>Modules</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;src</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)lib\$(ProjectName)_d.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;dsound.lib;dinput8.lib;dxguid.lib</AdditionalDependencies>
+    </Lib>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\NoLightingVs.obj -o src\Graphics\NoLightingVsGenerated.h
+$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\VertexLightingVs.obj -o src\Graphics\VertexLightingVsGenerated.h
+$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\PixelLightingVs.obj -o src\Graphics\PixelLightingVsGenerated.h
+$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\PixelLightingPs.obj -o src\Graphics\PixelLightingPsGenerated.h
+</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\include;src</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(SolutionDir)lib\$(ProjectName).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;dsound.lib;dinput8.lib;dxguid.lib</AdditionalDependencies>
+    </Lib>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\NoLightingVs.obj -o src\Graphics\NoLightingVsGenerated.h</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

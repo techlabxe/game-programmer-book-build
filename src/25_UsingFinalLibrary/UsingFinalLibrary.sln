@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AntiAlias", "AntiAlias\AntiAlias.vcxproj", "{B9406291-B73E-4AC3-A2E3-455317EA00F9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrawCube", "DrawCube\DrawCube.vcxproj", "{18CA9F90-9FED-47DC-B557-F3936A878F7A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RoboFightUsingFinal", "RoboFightUsingFinal\RoboFightUsingFinal.vcxproj", "{911C559D-0902-457F-8534-85059B94113A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TransparentCubes", "TransparentCubes\TransparentCubes.vcxproj", "{C6DC443D-82B8-4FE0-88F5-EBD1BDCCB4B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9406291-B73E-4AC3-A2E3-455317EA00F9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B9406291-B73E-4AC3-A2E3-455317EA00F9}.Debug|Win32.Build.0 = Debug|Win32
+		{B9406291-B73E-4AC3-A2E3-455317EA00F9}.Release|Win32.ActiveCfg = Release|Win32
+		{B9406291-B73E-4AC3-A2E3-455317EA00F9}.Release|Win32.Build.0 = Release|Win32
+		{18CA9F90-9FED-47DC-B557-F3936A878F7A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{18CA9F90-9FED-47DC-B557-F3936A878F7A}.Debug|Win32.Build.0 = Debug|Win32
+		{18CA9F90-9FED-47DC-B557-F3936A878F7A}.Release|Win32.ActiveCfg = Release|Win32
+		{18CA9F90-9FED-47DC-B557-F3936A878F7A}.Release|Win32.Build.0 = Release|Win32
+		{911C559D-0902-457F-8534-85059B94113A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{911C559D-0902-457F-8534-85059B94113A}.Debug|Win32.Build.0 = Debug|Win32
+		{911C559D-0902-457F-8534-85059B94113A}.Release|Win32.ActiveCfg = Release|Win32
+		{911C559D-0902-457F-8534-85059B94113A}.Release|Win32.Build.0 = Release|Win32
+		{C6DC443D-82B8-4FE0-88F5-EBD1BDCCB4B7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C6DC443D-82B8-4FE0-88F5-EBD1BDCCB4B7}.Debug|Win32.Build.0 = Debug|Win32
+		{C6DC443D-82B8-4FE0-88F5-EBD1BDCCB4B7}.Release|Win32.ActiveCfg = Release|Win32
+		{C6DC443D-82B8-4FE0-88F5-EBD1BDCCB4B7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

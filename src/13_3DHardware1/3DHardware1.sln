@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrawTriangle", "DrawTriangle\DrawTriangle.vcxproj", "{826C0F3D-CA16-46F0-9B3A-E68F865C0F67}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrawColoredTriangle", "DrawColoredTriangle\DrawColoredTriangle.vcxproj", "{591C381A-A304-462D-B301-BC2266BC45AF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrawTexturedTriangle", "DrawTexturedTriangle\DrawTexturedTriangle.vcxproj", "{288465A4-B15A-4B7F-8EB0-3D66BB0C3650}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrawColoredAndTexturedTriangle", "DrawColoredAndTexturedTriangle\DrawColoredAndTexturedTriangle.vcxproj", "{BDC5DC7D-4DE1-4779-A8F3-C1627FC15ED7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AlphaBlend", "AlphaBlend\AlphaBlend.vcxproj", "{3E495039-BEC5-42A6-9D24-05D4A328B33E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Transform", "Transform\Transform.vcxproj", "{3A729D94-110F-492E-B8F5-38760D10F29C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BakudanBitoUsingHardware", "BakudanBitoUsingHardware\BakudanBitoUsingHardware.vcxproj", "{033CFE18-A59B-4FF0-B748-6F5F1E9A7C92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{826C0F3D-CA16-46F0-9B3A-E68F865C0F67}.Debug|Win32.ActiveCfg = Debug|Win32
+		{826C0F3D-CA16-46F0-9B3A-E68F865C0F67}.Debug|Win32.Build.0 = Debug|Win32
+		{826C0F3D-CA16-46F0-9B3A-E68F865C0F67}.Release|Win32.ActiveCfg = Release|Win32
+		{826C0F3D-CA16-46F0-9B3A-E68F865C0F67}.Release|Win32.Build.0 = Release|Win32
+		{591C381A-A304-462D-B301-BC2266BC45AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{591C381A-A304-462D-B301-BC2266BC45AF}.Debug|Win32.Build.0 = Debug|Win32
+		{591C381A-A304-462D-B301-BC2266BC45AF}.Release|Win32.ActiveCfg = Release|Win32
+		{591C381A-A304-462D-B301-BC2266BC45AF}.Release|Win32.Build.0 = Release|Win32
+		{288465A4-B15A-4B7F-8EB0-3D66BB0C3650}.Debug|Win32.ActiveCfg = Debug|Win32
+		{288465A4-B15A-4B7F-8EB0-3D66BB0C3650}.Debug|Win32.Build.0 = Debug|Win32
+		{288465A4-B15A-4B7F-8EB0-3D66BB0C3650}.Release|Win32.ActiveCfg = Release|Win32
+		{288465A4-B15A-4B7F-8EB0-3D66BB0C3650}.Release|Win32.Build.0 = Release|Win32
+		{BDC5DC7D-4DE1-4779-A8F3-C1627FC15ED7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BDC5DC7D-4DE1-4779-A8F3-C1627FC15ED7}.Debug|Win32.Build.0 = Debug|Win32
+		{BDC5DC7D-4DE1-4779-A8F3-C1627FC15ED7}.Release|Win32.ActiveCfg = Release|Win32
+		{BDC5DC7D-4DE1-4779-A8F3-C1627FC15ED7}.Release|Win32.Build.0 = Release|Win32
+		{3E495039-BEC5-42A6-9D24-05D4A328B33E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3E495039-BEC5-42A6-9D24-05D4A328B33E}.Debug|Win32.Build.0 = Debug|Win32
+		{3E495039-BEC5-42A6-9D24-05D4A328B33E}.Release|Win32.ActiveCfg = Release|Win32
+		{3E495039-BEC5-42A6-9D24-05D4A328B33E}.Release|Win32.Build.0 = Release|Win32
+		{3A729D94-110F-492E-B8F5-38760D10F29C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3A729D94-110F-492E-B8F5-38760D10F29C}.Debug|Win32.Build.0 = Debug|Win32
+		{3A729D94-110F-492E-B8F5-38760D10F29C}.Release|Win32.ActiveCfg = Release|Win32
+		{3A729D94-110F-492E-B8F5-38760D10F29C}.Release|Win32.Build.0 = Release|Win32
+		{033CFE18-A59B-4FF0-B748-6F5F1E9A7C92}.Debug|Win32.ActiveCfg = Debug|Win32
+		{033CFE18-A59B-4FF0-B748-6F5F1E9A7C92}.Debug|Win32.Build.0 = Debug|Win32
+		{033CFE18-A59B-4FF0-B748-6F5F1E9A7C92}.Release|Win32.ActiveCfg = Release|Win32
+		{033CFE18-A59B-4FF0-B748-6F5F1E9A7C92}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,68 @@
+<VertexBuffer name=vb>
+	<Vertex position="-1, -1, -1"/>
+	<Vertex position="-1, -1, 1"/>
+	<Vertex position="-1, 1, -1"/>
+	<Vertex position="-1, 1, 1"/>
+	<Vertex position="1, -1, -1"/>
+	<Vertex position="1, -1, 1"/>
+	<Vertex position="1, 1, -1"/>
+	<Vertex position="1, 1, 1"/>
+</VertexBuffer>
+<IndexBuffer name=ib>
+	<Triangle indices="0, 1, 2"/>
+	<Triangle indices="3, 2, 1"/>
+	<Triangle indices="6, 5, 4"/>
+	<Triangle indices="5, 6, 7"/>
+	<Triangle indices="2, 3, 6"/>
+	<Triangle indices="3, 7, 6"/>
+	<Triangle indices="5, 1, 0"/>
+	<Triangle indices="0, 4, 5"/>
+	<Triangle indices="7, 3, 1"/>
+	<Triangle indices="7, 1, 5"/>
+	<Triangle indices="2, 6, 4"/>
+	<Triangle indices="4, 0, 2"/>
+</IndexBuffer>
+<Batch 
+	name=cube
+	vertexBuffer=vb
+	indexBuffer=ib
+	blend=opaque/>
+<Tree name=solarSystem>
+	<Node
+		name=sun 
+		batch=cube
+		rotation="0,60,0">
+		<Node name=earthTranslation translation="10,0,0">
+			<Node name=earth batch=cube/>
+			<Node name=moonRevolution rotation="0,45,0">
+				<Node name=moon batch=cube translation="4,0,0"/>
+			</Node>
+		</Node>
+	</Node>
+</Tree>
+<Animation name="solarSystem">
+	<Node name="sun">
+		<Curve type="rotationY">
+			<Data time="0" value="0"/>
+			<Data time="120" value="120"/>
+			<Data time="240" value="240"/>
+			<Data time="360" value="360"/>
+		</Curve>
+	</Node>
+	<Node name="moonRevolution">
+		<Curve type="rotationY">
+			<Data time="0" value="0"/>
+			<Data time="10" value="120"/>
+			<Data time="20" value="240"/>
+			<Data time="30" value="360"/>
+		</Curve>
+	</Node>
+	<Node name="earth">
+		<Curve type="rotationY">
+			<Data time="0" value="0"/>
+			<Data time="1" value="120"/>
+			<Data time="2" value="240"/>
+			<Data time="3" value="360"/>
+		</Curve>
+	</Node>
+</Animation>

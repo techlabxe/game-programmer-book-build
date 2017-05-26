@@ -1,0 +1,79 @@
+ddsssssd<VertexBuffer name="draw">
+	<Vertex position="-50, 10, -50" uv="0, 0"/>
+	<Vertex position="-50, 0, 50" uv="0, 1"/>
+	<Vertex position="50, 0, -50" uv="1, 0"/>
+	<Vertex position="50, 10, 50" uv="1, 1"/>
+
+	<Vertex position="-50, 0, -50" uv="0, 0"/>
+	<Vertex position="-50, 0, 50" uv="0, 1"/>
+	<Vertex position="-50, 11, -50" uv="1, 0"/>
+	<Vertex position="-50, 11, 50" uv="1, 1"/>
+
+	<Vertex position="50, 0, -50" uv="0, 0"/>
+	<Vertex position="50, 0, 50" uv="0, 1"/>
+	<Vertex position="50, 11, -50" uv="1, 0"/>
+	<Vertex position="50, 11, 50" uv="1, 1"/>
+
+	<Vertex position="-50, 0, -50" uv="0, 0"/>
+	<Vertex position="50, 0, -50" uv="0, 1"/>
+	<Vertex position="-50, 11, -50" uv="1, 0"/>
+	<Vertex position="50, 11, -50" uv="1, 1"/>
+
+	<Vertex position="-50, 0, 50" uv="0, 0"/>
+	<Vertex position="50, 0, 50" uv="0, 1"/>
+	<Vertex position="-50, 11, 50" uv="1, 0"/>
+	<Vertex position="50, 11, 50" uv="1, 1"/>
+</VertexBuffer>
+
+<VertexBuffer name="collision">
+	<Vertex position="-50, 10, -50" uv="0, 0"/>
+	<Vertex position="-50, 0, 50" uv="0, 1"/>
+	<Vertex position="50, 0, -50" uv="1, 0"/>
+	<Vertex position="50, 10, 50" uv="1, 1"/>
+
+	<Vertex position="-49.5, 0, -49.5" uv="0, 0"/>
+	<Vertex position="-49.5, 0, 49.5" uv="0, 1"/>
+	<Vertex position="-49.5, 11, -49.5" uv="1, 0"/>
+	<Vertex position="-49.5, 11, 49.5" uv="1, 1"/>
+
+	<Vertex position="49.5, 0, -49.5" uv="0, 0"/>
+	<Vertex position="49.5, 0, 49.5" uv="0, 1"/>
+	<Vertex position="49.5, 11, -49.5" uv="1, 0"/>
+	<Vertex position="49.5, 11, 49.5" uv="1, 1"/>
+
+	<Vertex position="-49.5, 0, -49.5" uv="0, 0"/>
+	<Vertex position="49.5, 0, -49.5" uv="0, 1"/>
+	<Vertex position="-49.5, 11, -49.5" uv="1, 0"/>
+	<Vertex position="49.5, 11, -49.5" uv="1, 1"/>
+
+	<Vertex position="-49.5, 0, 49.5" uv="0, 0"/>
+	<Vertex position="49.5, 0, 49.5" uv="0, 1"/>
+	<Vertex position="-49.5, 11, 49.5" uv="1, 0"/>
+	<Vertex position="49.5, 11, 49.5" uv="1, 1"/>
+</VertexBuffer>
+
+<IndexBuffer name="ib">
+	<Triangle indices="0, 1, 2"/>
+	<Triangle indices="3, 1, 2"/>
+	<Triangle indices="4, 5, 6"/>
+	<Triangle indices="7, 5, 6"/>
+	<Triangle indices="8, 9, 10"/>
+	<Triangle indices="11, 9, 10"/>
+	<Triangle indices="12, 13, 14"/>
+	<Triangle indices="15, 13, 14"/>
+	<Triangle indices="16, 17, 18"/>
+	<Triangle indices="19, 17, 18"/>
+</IndexBuffer>
+<Texture name="texture" filename="stage.tga"/>
+<Batch 
+	name="draw"
+	vertexBuffer="draw"
+	indexBuffer="ib"
+	texture="texture"
+	blend="opaque">
+</Batch>
+<Batch 
+	name="collision"
+	vertexBuffer="collision"
+	indexBuffer="ib"
+</Batch>
