@@ -39,9 +39,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GAME_LIB_DIR)\RealTime\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GAME_LIB_DIR)\2DActionGame\lib\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GAME_LIB_DIR)\RealTime\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GAME_LIB_DIR)\2DActionGame\lib\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -52,41 +52,42 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
-      <Command>$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe font.tga -o src\fontTextureGenerated.h</Command>
+      <Command>$(ProjectDir)..\..\Tools\bin\ConvertToCode.exe font.tga -o src\fontTextureGenerated.h</Command>
     </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <ProgramDataBaseFileName>$(OutDir)$(ProjectName)_d.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>Modules_d.lib</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\Modules\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Modules\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(GAME_LIB_DIR)\RealTime\include
-mkdir $(GAME_LIB_DIR)\RealTime\include\GameLib
-mkdir $(GAME_LIB_DIR)\RealTime\include\GameLib\Base
-copy $(SolutionDir)..\include\GameLib\Base\DebugStream.h $(GAME_LIB_DIR)\RealTime\include\GameLib\Base\
-copy src\Framework.h $(GAME_LIB_DIR)\RealTime\include\GameLib\
-copy $(SolutionDir)..\Modules\lib\*.pdb $(GAME_LIB_DIR)\RealTime\lib</Command>
+      <Command>mkdir $(GAME_LIB_DIR)\2DActionGame\include
+mkdir $(GAME_LIB_DIR)\2DActionGame\include\GameLib
+mkdir $(GAME_LIB_DIR)\2DActionGame\include\GameLib\Base
+copy $(ProjectDir)..\include\GameLib\Base\DebugStream.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\Base\
+copy src\GameLib.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\
+copy src\Framework.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\
+copy $(ProjectDir)..\Modules\lib\*.pdb $(GAME_LIB_DIR)\2DActionGame\lib</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
-      <Command>$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe font.tga -o src\fontTextureGenerated.h</Command>
+      <Command>$(ProjectDir)..\..\Tools\bin\ConvertToCode.exe font.tga -o src\fontTextureGenerated.h</Command>
     </PreBuildEvent>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>
@@ -99,20 +100,22 @@ copy $(SolutionDir)..\Modules\lib\*.pdb $(GAME_LIB_DIR)\RealTime\lib</Command>
     <Lib>
       <AdditionalDependencies>Modules.lib</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\Modules\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Modules\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(GAME_LIB_DIR)\RealTime\include
-mkdir $(GAME_LIB_DIR)\RealTime\include\GameLib
-mkdir $(GAME_LIB_DIR)\RealTime\include\GameLib\Base
-copy $(SolutionDir)..\include\GameLib\Base\DebugStream.h $(GAME_LIB_DIR)\RealTime\include\GameLib\Base\
-copy src\Framework.h $(GAME_LIB_DIR)\RealTime\include\GameLib\
-copy $(SolutionDir)..\Modules\lib\*.pdb $(GAME_LIB_DIR)\RealTime\lib</Command>
+      <Command>mkdir $(GAME_LIB_DIR)\2DActionGame\include
+mkdir $(GAME_LIB_DIR)\2DActionGame\include\GameLib
+mkdir $(GAME_LIB_DIR)\2DActionGame\include\GameLib\Base
+copy $(ProjectDir)..\include\GameLib\Base\DebugStream.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\Base\
+copy src\GameLib.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\
+copy src\Framework.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\
+copy $(ProjectDir)..\Modules\lib\*.pdb $(GAME_LIB_DIR)\2DActionGame\lib</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\FontTextureGenerated.h" />
     <ClInclude Include="src\Framework.h" />
+    <ClInclude Include="src\GameLib.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Framework.cpp" />

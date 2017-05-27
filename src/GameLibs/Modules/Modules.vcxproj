@@ -243,7 +243,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)lib\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IntDir>$(Configuration)\</IntDir>
@@ -252,7 +252,7 @@
     <TargetName>$(ProjectName)_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)lib\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IntDir>$(Configuration)\</IntDir>
@@ -265,7 +265,7 @@
       <Optimization>Disabled</Optimization>
       <AdditionalIncludeDirectories>..\include;src</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <ProgramDataBaseFileName>$(SolutionDir)lib\$(ProjectName)_d.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)lib\$(ProjectName)_d.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -275,10 +275,10 @@
       <AdditionalDependencies>winmm.lib;d3d9.lib;dsound.lib;dinput8.lib;dxguid.lib</AdditionalDependencies>
     </Lib>
     <PreBuildEvent>
-      <Command>$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\NoLightingVs.obj -o src\Graphics\NoLightingVsGenerated.h
-$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\VertexLightingVs.obj -o src\Graphics\VertexLightingVsGenerated.h
-$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\PixelLightingVs.obj -o src\Graphics\PixelLightingVsGenerated.h
-$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\PixelLightingPs.obj -o src\Graphics\PixelLightingPsGenerated.h
+      <Command>$(ProjectDir)..\..\Tools\bin\ConvertToCode.exe shader\NoLightingVs.obj -o src\Graphics\NoLightingVsGenerated.h
+$(ProjectDir)..\..\Tools\bin\ConvertToCode.exe shader\VertexLightingVs.obj -o src\Graphics\VertexLightingVsGenerated.h
+$(ProjectDir)..\..\Tools\bin\ConvertToCode.exe shader\PixelLightingVs.obj -o src\Graphics\PixelLightingVsGenerated.h
+$(ProjectDir)..\..\Tools\bin\ConvertToCode.exe shader\PixelLightingPs.obj -o src\Graphics\PixelLightingPsGenerated.h
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -290,7 +290,7 @@ $(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\PixelLightingPs.obj -o sr
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>..\include;src</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <ProgramDataBaseFileName>$(SolutionDir)lib\$(ProjectName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)lib\$(ProjectName).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -302,7 +302,7 @@ $(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\PixelLightingPs.obj -o sr
       <AdditionalDependencies>winmm.lib;d3d9.lib;dsound.lib;dinput8.lib;dxguid.lib</AdditionalDependencies>
     </Lib>
     <PreBuildEvent>
-      <Command>$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe shader\NoLightingVs.obj -o src\Graphics\NoLightingVsGenerated.h</Command>
+      <Command>$(ProjectDir)..\..\Tools\bin\ConvertToCode.exe shader\NoLightingVs.obj -o src\Graphics\NoLightingVsGenerated.h</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

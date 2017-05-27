@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1107F66B-8923-4ED2-8479-189A04730B17}</ProjectGuid>
+    <ProjectGuid>{2A0941A3-9729-4E64-81F0-40789A16A93A}</ProjectGuid>
     <RootNamespace>Framework</RootNamespace>
     <Keyword>Win32Proj</Keyword>
   </PropertyGroup>
@@ -39,9 +39,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GAME_LIB_DIR)\2DActionGame\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(GAME_LIB_DIR)\Loading\lib\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GAME_LIB_DIR)\2DActionGame\lib\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(GAME_LIB_DIR)\Loading\lib\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -52,42 +52,51 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
-      <Command>$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe font.tga -o src\fontTextureGenerated.h</Command>
+      <Command>$(ProjectDir)..\..\Tools\bin\ConvertToCode.exe font.tga -o src\fontTextureGenerated.h</Command>
     </PreBuildEvent>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader>
       </PrecompiledHeader>
-      <ProgramDataBaseFileName>$(OutDir)$(ProjectName)_d.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <WarningLevel>Level4</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>Modules_d.lib</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\Modules\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Modules\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(GAME_LIB_DIR)\2DActionGame\include
-mkdir $(GAME_LIB_DIR)\2DActionGame\include\GameLib
-mkdir $(GAME_LIB_DIR)\2DActionGame\include\GameLib\Base
-copy $(SolutionDir)..\include\GameLib\Base\DebugStream.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\Base\
-copy src\GameLib.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\
-copy src\Framework.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\
-copy $(SolutionDir)..\Modules\lib\*.pdb $(GAME_LIB_DIR)\2DActionGame\lib</Command>
+      <Command>mkdir $(GAME_LIB_DIR)\Loading\include
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib\Base
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib\Input
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib\Sound
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib\PseudoXml
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib\Threading
+copy $(ProjectDir)..\include\GameLib\Base\DebugStream.h $(GAME_LIB_DIR)\Loading\include\GameLib\Base\
+copy src\GameLib.h $(GAME_LIB_DIR)\Loading\include\GameLib\
+copy src\Framework.h $(GAME_LIB_DIR)\Loading\include\GameLib\
+copy src\Math.h $(GAME_LIB_DIR)\Loading\include\GameLib\
+xcopy $(ProjectDir)..\include\GameLib\Input $(GAME_LIB_DIR)\Loading\include\GameLib\Input /C /Y
+xcopy $(ProjectDir)..\include\GameLib\Sound $(GAME_LIB_DIR)\Loading\include\GameLib\Sound /C /Y
+xcopy $(ProjectDir)..\include\GameLib\PseudoXml $(GAME_LIB_DIR)\Loading\include\GameLib\PseudoXml /C /Y
+xcopy $(ProjectDir)..\include\GameLib\Threading $(GAME_LIB_DIR)\Loading\include\GameLib\Threading /C /Y
+copy $(ProjectDir)..\Modules\lib\*.pdb $(GAME_LIB_DIR)\Loading\lib</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
-      <Command>$(SolutionDir)..\..\Tools\bin\ConvertToCode.exe font.tga -o src\fontTextureGenerated.h</Command>
+      <Command>$(ProjectDir)..\..\Tools\bin\ConvertToCode.exe font.tga -o src\fontTextureGenerated.h</Command>
     </PreBuildEvent>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <PrecompiledHeader>
@@ -100,25 +109,36 @@ copy $(SolutionDir)..\Modules\lib\*.pdb $(GAME_LIB_DIR)\2DActionGame\lib</Comman
     <Lib>
       <AdditionalDependencies>Modules.lib</AdditionalDependencies>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\Modules\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)Modules\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(GAME_LIB_DIR)\2DActionGame\include
-mkdir $(GAME_LIB_DIR)\2DActionGame\include\GameLib
-mkdir $(GAME_LIB_DIR)\2DActionGame\include\GameLib\Base
-copy $(SolutionDir)..\include\GameLib\Base\DebugStream.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\Base\
-copy src\GameLib.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\
-copy src\Framework.h $(GAME_LIB_DIR)\2DActionGame\include\GameLib\
-copy $(SolutionDir)..\Modules\lib\*.pdb $(GAME_LIB_DIR)\2DActionGame\lib</Command>
+      <Command>mkdir $(GAME_LIB_DIR)\Loading\include
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib\Base
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib\Input
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib\Sound
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib\PseudoXml
+mkdir $(GAME_LIB_DIR)\Loading\include\GameLib\Threading
+copy $(ProjectDir)..\include\GameLib\Base\DebugStream.h $(GAME_LIB_DIR)\Loading\include\GameLib\Base\
+copy src\GameLib.h $(GAME_LIB_DIR)\Loading\include\GameLib\
+copy src\Framework.h $(GAME_LIB_DIR)\Loading\include\GameLib\
+copy src\Math.h $(GAME_LIB_DIR)\Loading\include\GameLib\
+xcopy $(ProjectDir)..\include\GameLib\Input $(GAME_LIB_DIR)\Loading\include\GameLib\Input /C /Y
+xcopy $(ProjectDir)..\include\GameLib\Sound $(GAME_LIB_DIR)\Loading\include\GameLib\Sound /C /Y
+xcopy $(ProjectDir)..\include\GameLib\PseudoXml $(GAME_LIB_DIR)\Loading\include\GameLib\PseudoXml /C /Y
+xcopy $(ProjectDir)..\include\GameLib\Threading $(GAME_LIB_DIR)\Loading\include\GameLib\Threading /C /Y
+copy $(ProjectDir)..\Modules\lib\*.pdb $(GAME_LIB_DIR)\Loading\lib</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="src\FontTextureGenerated.h" />
     <ClInclude Include="src\Framework.h" />
     <ClInclude Include="src\GameLib.h" />
+    <ClInclude Include="src\Math.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Framework.cpp" />
+    <ClCompile Include="src\Math.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
