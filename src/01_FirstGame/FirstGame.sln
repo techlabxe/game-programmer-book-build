@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NimotsuKun", "NimotsuKun\NimotsuKun.vcxproj", "{42B7E388-07C5-4C9E-94A6-C143F5183C3A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NimotsuKun2", "NimotsuKun2\NimotsuKun2.vcxproj", "{4F1E2B87-6B7A-438F-857F-24088A03E5B9}"

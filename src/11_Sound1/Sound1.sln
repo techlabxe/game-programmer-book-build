@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BakudanbitoWithSound", "BakudanbitoWithSound\BakudanbitoWithSound.vcxproj", "{63D7B45D-7F25-4337-A6A4-EE0736BF74A4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultipleWaveFile", "MultipleWaveFile\MultipleWaveFile.vcxproj", "{4C376B08-A060-4E6B-9058-7288BA37ECDE}"

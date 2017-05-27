@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NimotsuKunWithSequence1", "NimotsuKunWithSequence1\NimotsuKunWithSequence1.vcxproj", "{581598E0-3B7C-4EAF-B1B9-93732DED1A6A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NimotsuKunWithSequence2", "NimotsuKunWithSequence2\NimotsuKunWithSequence2.vcxproj", "{AB5AAA6F-191A-47FC-B9FA-C4AFDC7120FB}"

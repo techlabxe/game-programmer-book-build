@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleLoader", "SimpleLoader\SimpleLoader.vcxproj", "{33F897E0-1FC7-42CE-B725-87411FDC4DC2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OneFilePerFrame", "OneFilePerFrame\OneFilePerFrame.vcxproj", "{A79FF7C6-050C-41BB-8D2B-3278EDC8E6E2}"

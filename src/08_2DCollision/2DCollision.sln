@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Detection", "Detection\Detection.vcxproj", "{AE5BB2C6-E5F0-49EA-99C4-812FF0582B90}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reaction1", "Reaction1\Reaction1.vcxproj", "{43AB6873-F5E6-4B7C-8E25-77412DDF2708}"

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrawTriangle", "DrawTriangle\DrawTriangle.vcxproj", "{826C0F3D-CA16-46F0-9B3A-E68F865C0F67}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrawColoredTriangle", "DrawColoredTriangle\DrawColoredTriangle.vcxproj", "{591C381A-A304-462D-B301-BC2266BC45AF}"

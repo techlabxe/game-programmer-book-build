@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BakudanBitoWithImprovedSequence", "BakudanBitoWithImprovedSequence\BakudanBitoWithImprovedSequence.vcxproj", "{F3A114D9-AC63-4FA4-98D5-721036DDDACC}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Polymorphism", "Polymorphism\Polymorphism.vcxproj", "{658AA4C9-BB54-4CCE-AA60-3A6EC6F65199}"

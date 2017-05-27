@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NimotsuKunRealTime", "NimotsuKunRealTime\NimotsuKunRealTime.vcxproj", "{985840AB-583E-4E94-BFC3-E62B13E0F9E5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NimotsuKunRealTime2", "NimotsuKunRealTime2\NimotsuKunRealTime2.vcxproj", "{462BD19A-9D9A-460B-BE8D-5DBA29D319FC}"

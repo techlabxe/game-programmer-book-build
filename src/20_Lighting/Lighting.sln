@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RoboFightWithDiffuseLighting", "RoboFightWithDiffuseLighting\RoboFightWithDiffuseLighting.vcxproj", "{2739815B-50EC-480D-AC6E-ED95691F3A52}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RoboFightWithSmoothShading", "RoboFightWithSmoothShading\RoboFightWithSmoothShading.vcxproj", "{E68FA1BE-A3BE-4B89-831A-C865A4020C80}"

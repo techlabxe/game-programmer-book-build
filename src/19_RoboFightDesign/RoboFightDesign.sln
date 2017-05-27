@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library", "Library\Library.vcxproj", "{F4D9BBE2-1225-476D-B392-BCDC4B7935AE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RoboFightMoveOnly", "RoboFightMoveOnly\RoboFightMoveOnly.vcxproj", "{5EA91DF5-126B-454B-91ED-F81314C41F88}"

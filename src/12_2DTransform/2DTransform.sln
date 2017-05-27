@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rotation1", "Rotation1\Rotation1.vcxproj", "{E5555825-6345-44A7-BE8D-A79D8C51A817}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rotation2", "Rotation2\Rotation2.vcxproj", "{22FBF2B3-901E-42DA-9AEB-39D2F7996B54}"

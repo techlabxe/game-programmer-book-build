@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinarySearch", "BinarySearch\BinarySearch.vcxproj", "{83FB52EA-3D0B-47DD-8652-686D81DBA77F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ListUsingArray", "ListUsingArray\ListUsingArray.vcxproj", "{C96D9D11-1392-4367-976D-8BF57716F7C0}"

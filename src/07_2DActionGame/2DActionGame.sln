@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NimotsuKunWithSystemFont", "NimotsuKunWithSystemFont\NimotsuKunWithSystemFont.vcxproj", "{67D8EB25-FFD3-4F0D-8F23-758215557AD5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BakudanBitoSequenceOnly", "BakudanBitoSequenceOnly\BakudanBitoSequenceOnly.vcxproj", "{397E8701-7A18-4D27-AD56-7D95E913CB08}"

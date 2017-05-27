@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "displayImage", "displayImage\displayImage.vcxproj", "{698DC5C7-A447-4AA0-A474-86A86BC020A6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "displayImagePartially", "displayImagePartially\displayImagePartially.vcxproj", "{F116D1B0-59B2-4528-804B-C957302F92FC}"

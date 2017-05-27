@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CirclesAllCombination", "CirclesAllCombination\CirclesAllCombination.vcxproj", "{7D11A703-4304-4314-83CB-F72DB2B56E88}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CirclesSorting1", "CirclesSorting1\CirclesSorting1.vcxproj", "{C3D4DC18-EBF7-43A1-8A91-3C770DE13C52}"

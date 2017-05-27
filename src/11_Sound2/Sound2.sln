@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChangeFrequency", "ChangeFrequency\ChangeFrequency.vcxproj", "{BE24F2D3-CE48-4635-B60D-550F2E0B0178}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChangeTimbre", "ChangeTimbre\ChangeTimbre.vcxproj", "{8A6A7294-6F63-4AB9-A960-9A0008F8C2DE}"

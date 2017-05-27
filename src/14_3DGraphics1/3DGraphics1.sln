@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "draw3DTriangle", "draw3DTriangle\draw3DTriangle.vcxproj", "{AAB11B58-4F82-4BED-8E0F-85420C825F07}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZTest", "ZTest\ZTest.vcxproj", "{AE78EA9F-F39B-4349-AD84-02FF7B44A3E3}"
