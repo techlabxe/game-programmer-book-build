@@ -4,6 +4,7 @@
 #include "GameLib/Base/HashMap.h"
 #include "GameLib/base/Compressor.h"
 #include <fstream>
+#include <algorithm>	//for std::min,max (later VS2013)
 
 namespace GameLib{
 namespace FileIO{
