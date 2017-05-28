@@ -1,6 +1,6 @@
 #include "Matrix23.h"
 #include "Vector2.h"
-#include "GameLib/Math.h" //sin,cos‚Ì‚½‚ß‚É
+#include "GameLib/GameLibMath.h" //sin,cos‚Ì‚½‚ß‚É
 using namespace GameLib;
 
 Matrix23::Matrix23(){

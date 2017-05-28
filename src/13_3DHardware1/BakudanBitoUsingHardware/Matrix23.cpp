@@ -1,6 +1,6 @@
 #include "Matrix23.h"
 #include "Vector2.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 
 Matrix23::Matrix23(){

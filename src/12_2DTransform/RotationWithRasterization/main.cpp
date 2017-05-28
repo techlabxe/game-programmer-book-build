@@ -6,7 +6,7 @@ using namespace GameLib;
 #include "Image.h"
 #include "Vector2.h"
 #include "Matrix22.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace std;
 
 void rotate(

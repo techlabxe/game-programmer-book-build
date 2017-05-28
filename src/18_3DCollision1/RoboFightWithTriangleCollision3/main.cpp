@@ -8,7 +8,7 @@
 #include "Robo.h"
 #include "Stage.h"
 #include "Pad.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 using namespace std;
 

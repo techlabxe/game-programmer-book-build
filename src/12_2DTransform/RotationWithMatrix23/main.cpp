@@ -4,7 +4,7 @@
 #include "Image.h"
 #include "Vector2.h"
 #include "Matrix23.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace std;
 
 int round( double a ){

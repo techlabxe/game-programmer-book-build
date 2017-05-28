@@ -2,7 +2,7 @@
 #include "GameLib/GameLib.h"
 #include "GameLib/Framework.h"
 #include "Image.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 #include <sstream>
 using namespace GameLib;
 using namespace std;

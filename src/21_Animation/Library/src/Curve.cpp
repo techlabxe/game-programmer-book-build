@@ -3,7 +3,7 @@
 
 #include "GameLib/PseudoXml/Element.h"
 #include "GameLib/PseudoXml/Attribute.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 #include <string>
 using namespace std;
 using namespace GameLib;

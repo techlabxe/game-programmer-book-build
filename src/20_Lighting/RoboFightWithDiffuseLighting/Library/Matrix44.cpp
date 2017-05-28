@@ -1,7 +1,7 @@
 #include "Library/Matrix44.h"
 #include "Library/Matrix34.h"
 #include "Library/Vector3.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 
 Matrix44::Matrix44(){

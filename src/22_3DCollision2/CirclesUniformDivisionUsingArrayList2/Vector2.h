@@ -1,7 +1,7 @@
 #ifndef INCLUDED_VECTOR2_H
 #define INCLUDED_VECTOR2_H
 
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 
 class Vector2{
 public:

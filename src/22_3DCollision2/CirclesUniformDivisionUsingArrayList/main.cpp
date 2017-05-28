@@ -1,5 +1,5 @@
 #include "GameLib/Framework.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 #include "Vector2.h"
 #include <sstream>
 #include <list>

@@ -2,7 +2,7 @@
 #include "GameLib/Framework.h"
 #include "Vector3.h"
 #include "Matrix34.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 using namespace std;
 

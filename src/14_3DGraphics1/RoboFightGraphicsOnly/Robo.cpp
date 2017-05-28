@@ -5,7 +5,7 @@ using namespace GameLib;
 #include "Pad.h"
 #include "Matrix34.h"
 #include "Matrix44.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 
 Robo::Robo( int id ) : 
