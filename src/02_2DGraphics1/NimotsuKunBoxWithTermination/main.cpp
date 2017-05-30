@@ -2,6 +2,7 @@
 using namespace GameLib;
 
 #include <fstream>
+#include <algorithm>
 using namespace std;
 
 //関数プロトタイプ

@@ -5,6 +5,7 @@ set( PROJECT_NAME      2DGraphicsFramework )
 set( PROJECT_DIR_NAME  2DGraphics1 )
 set( PROJECT_FILE_PATH ${PROJECT_DIR_NAME}/lib )
 
+
 include( ../cmake/GameLib.cmake )
 include( ../cmake/MakeFont.cmake )
 

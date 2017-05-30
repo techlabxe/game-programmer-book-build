@@ -55,6 +55,12 @@ set_target_properties(
   ${PROJECT_NAME} PROPERTIES OUTPUT_NAME ${TARGET_FILE_NAME}
 )
 
+
+set( MODULE_LIB_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../Modules/lib" )
+
+set ( CMAKE_STATIC_LINKER_FLAGS_DEBUG "Modules_d.lib /LIBPATH:${MODULE_LIB_PATH}" )
+set ( CMAKE_STATIC_LINKER_FLAGS_RELEASE "Modules.lib /LIBPATH:${MODULE_LIB_PATH}" )
+
 add_dependencies(
   ${PROJECT_NAME} Modules
 )

@@ -7,16 +7,16 @@
 #include "GameLib/GameLibMath.h"
 using namespace std;
 
-int round( double a ){
-	a += ( a > 0.0 ) ? 0.5 : -0.5f;
-	return static_cast< int >( a );
-}
-
 bool gFirstFrame = true;
 Image* gImage;
 int gCount;
 
 namespace GameLib{
+	int round(double a) {
+		a += (a > 0.0) ? 0.5 : -0.5f;
+		return static_cast< int >(a);
+	}
+
 	void Framework::update(){
 		if ( gFirstFrame ){
 			gImage = new Image( "background.dds" );

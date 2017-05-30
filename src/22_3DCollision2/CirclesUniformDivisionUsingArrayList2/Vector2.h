@@ -34,7 +34,7 @@ public:
 		return x*x + y*y;
 	}
 	double length() const {
-		return sqrt( x*x + y*y );
+		return GameLib::sqrt( x*x + y*y );
 	}
 	void madd( const Vector2& a, double b ){
 		x += a.x * b;

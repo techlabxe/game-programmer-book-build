@@ -36,7 +36,7 @@ foreach(CompilerFlag ${CompilerFlags})
   string(REPLACE "/MD" "/MT" ${CompilerFlag} "${${CompilerFlag}}")
 endforeach()
 
-set( LIB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/libs )
+set( LIB_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib )
 # set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${LIB_DIR} )
 
 foreach( OUTPUTCONFIG ${CMAKE_CONFIGURATION_TYPES} )

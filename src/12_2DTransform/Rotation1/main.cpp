@@ -7,47 +7,50 @@
 using namespace GameLib;
 using namespace std;
 
-int round( double a ){
-	a += ( a > 0.0 ) ? 0.5 : -0.5f;
-	return static_cast< int >( a );
-}
+namespace GameLib {
+	int round(double a) {
+		a += (a > 0.0) ? 0.5 : -0.5f;
+		return static_cast<int>(a);
+	}
 
-void rotate(
-int* rx,
-int* ry,
-int x,
-int y,
-double xOffset,
-double yOffset,
-double rotation ){
-	double xf = static_cast< double >( x );
-	double yf = static_cast< double >( y );
-	//添え字から座標に変換
-	xf += 0.5f;
-	yf += 0.5f;
-	//原点をずらす
-	xf -= xOffset;
-	yf -= yOffset;
-	//角度と半径を求める
-	double r = GameLib::sqrt( xf * xf + yf * yf );
-	double angle = GameLib::atan2( yf, xf );
-	//角度にrotationを加える。
-	angle += rotation;
-	//サインコサイン
-	double sine = GameLib::sin( angle );
-	double cosine = GameLib::cos( angle );
-	//xf,yfを計算しなおし
-	xf = r * cosine;
-	yf = r * sine;
-	//原点を元に戻す
-	xf += xOffset;
-	yf += yOffset;
-	//座標から添え字へ
-	xf -= 0.5;
-	yf -= 0.5;
-	//四捨五入して整数化
-	*rx = round( xf );
-	*ry = round( yf );
+
+	void rotate(
+		int* rx,
+		int* ry,
+		int x,
+		int y,
+		double xOffset,
+		double yOffset,
+		double rotation) {
+		double xf = static_cast<double>(x);
+		double yf = static_cast<double>(y);
+		//添え字から座標に変換
+		xf += 0.5f;
+		yf += 0.5f;
+		//原点をずらす
+		xf -= xOffset;
+		yf -= yOffset;
+		//角度と半径を求める
+		double r = GameLib::sqrt(xf * xf + yf * yf);
+		double angle = GameLib::atan2(yf, xf);
+		//角度にrotationを加える。
+		angle += rotation;
+		//サインコサイン
+		double sine = GameLib::sin(angle);
+		double cosine = GameLib::cos(angle);
+		//xf,yfを計算しなおし
+		xf = r * cosine;
+		yf = r * sine;
+		//原点を元に戻す
+		xf += xOffset;
+		yf += yOffset;
+		//座標から添え字へ
+		xf -= 0.5;
+		yf -= 0.5;
+		//四捨五入して整数化
+		*rx = round(xf);
+		*ry = round(yf);
+	}
 }
  
 bool gFirstFrame = true;

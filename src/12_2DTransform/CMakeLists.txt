@@ -1,0 +1,17 @@
+cmake_minimum_required (VERSION 3.8)
+
+set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "" FORCE)
+set(CMAKE_SUPPRESS_REGENERATION true)
+
+add_subdirectory( ScalingWithMatrix23 )
+add_subdirectory( TranslationWithMatrix23 )
+add_subdirectory( MergeMatrices )
+add_subdirectory( Rotation1 )
+add_subdirectory( Rotation2 )
+add_subdirectory( RotationAndScaling )
+add_subdirectory( RotationWithInterporation )
+add_subdirectory( RotationWithMatrix )
+add_subdirectory( RotationWithMatrix23 )
+add_subdirectory( RotationWithRasterization )
+add_subdirectory( RotationWithVector )
+add_subdirectory( Scaling )

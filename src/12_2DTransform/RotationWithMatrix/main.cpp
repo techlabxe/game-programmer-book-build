@@ -8,31 +8,33 @@
 using namespace GameLib;
 using namespace std;
 
-int round( double a ){
-	a += ( a > 0.0 ) ? 0.5 : -0.5f;
-	return static_cast< int >( a );
-}
+namespace GameLib {
+	int round(double a) {
+		a += (a > 0.0) ? 0.5 : -0.5f;
+		return static_cast<int>(a);
+	}
 
-void rotate(
-int* rx,
-int* ry,
-int x,
-int y,
-const Vector2& offset,
-const Matrix22& matrix ){
-	Vector2 p( x, y );
-	//オフセットと0.5をまとめる
-	Vector2 tmpOffset( -0.5, -0.5 );
-	tmpOffset += offset; //tmpOffset = offset-(0.5,0.5)
-	//添え字から座標に変換して、原点をずらす
-	p -= tmpOffset;
-	//行列をかけてまわす
-	matrix.multiply( &p, p );
-	//原点を元に戻して添え字へ
-	p += tmpOffset;
-	//四捨五入して整数化
-	*rx = round( p.x );
-	*ry = round( p.y );
+	void rotate(
+		int* rx,
+		int* ry,
+		int x,
+		int y,
+		const Vector2& offset,
+		const Matrix22& matrix) {
+		Vector2 p(x, y);
+		//オフセットと0.5をまとめる
+		Vector2 tmpOffset(-0.5, -0.5);
+		tmpOffset += offset; //tmpOffset = offset-(0.5,0.5)
+		//添え字から座標に変換して、原点をずらす
+		p -= tmpOffset;
+		//行列をかけてまわす
+		matrix.multiply(&p, p);
+		//原点を元に戻して添え字へ
+		p += tmpOffset;
+		//四捨五入して整数化
+		*rx = round(p.x);
+		*ry = round(p.y);
+	}
 }
 
 bool gFirstFrame = true;

@@ -7,28 +7,30 @@
 #include "GameLib/GameLibMath.h"
 using namespace std;
 
-int round( double a ){
-	a += ( a > 0.0 ) ? 0.5 : -0.5f;
-	return static_cast< int >( a );
-}
+namespace GameLib {
+	int round(double a) {
+		a += (a > 0.0) ? 0.5 : -0.5f;
+		return static_cast<int>(a);
+	}
 
-void transform(
-Vector2* out,
-const Vector2& in,
-const Vector2& scalingOffset,
-const Vector2& scalingRatio,
-const Vector2& rotationOffset,
-const Matrix22& rotationMatrix ){
-	//Šg‘åk¬
-	out->setMul( scalingRatio, in );
-	//ˆÚ“®
-	*out += scalingOffset;
-	//‰ñ“]’†S‚¸‚ç‚µ
-	*out -= rotationOffset;
-	//‰ñ“]
-	rotationMatrix.multiply( out, *out );
-	//‰ñ“]’†S‚¸‚ç‚µ‚à‚Ç‚µ
-	*out += rotationOffset;
+	void transform(
+		Vector2* out,
+		const Vector2& in,
+		const Vector2& scalingOffset,
+		const Vector2& scalingRatio,
+		const Vector2& rotationOffset,
+		const Matrix22& rotationMatrix) {
+		//Šg‘åk¬
+		out->setMul(scalingRatio, in);
+		//ˆÚ“®
+		*out += scalingOffset;
+		//‰ñ“]’†S‚¸‚ç‚µ
+		*out -= rotationOffset;
+		//‰ñ“]
+		rotationMatrix.multiply(out, *out);
+		//‰ñ“]’†S‚¸‚ç‚µ‚à‚Ç‚µ
+		*out += rotationOffset;
+	}
 }
 
 bool gFirstFrame = true;
