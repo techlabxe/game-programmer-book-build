@@ -44,3 +44,7 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 15_GraphicsLibrary )
 target_link_libraries( ${PROJECT_NAME} debug Library_d GameLib_d )
 target_link_libraries( ${PROJECT_NAME} optimized Library GameLib )
+
+# File Copy
+set( COPY_FILES grid.tga )
+include( ../../cmake/copyresource.cmake )

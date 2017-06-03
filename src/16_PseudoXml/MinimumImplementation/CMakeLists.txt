@@ -22,3 +22,7 @@ target_link_libraries( ${PROJECT_NAME} optimized GameLib )
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 16_PseudoXml )
+
+# File Copy
+set( COPY_FILES grid.tga data.txt camera.txt )
+include( ../../cmake/copyresource.cmake )

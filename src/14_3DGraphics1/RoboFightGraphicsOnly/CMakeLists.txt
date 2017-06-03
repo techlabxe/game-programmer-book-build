@@ -7,3 +7,8 @@ include( ../../cmake/SampleBase.cmake )
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 14_3DGraphics )
+
+
+# File Copy
+set( COPY_FILES robo.tga stage.tga )
+include( ../../cmake/copyresource.cmake )

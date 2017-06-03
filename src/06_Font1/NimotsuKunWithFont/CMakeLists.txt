@@ -32,3 +32,5 @@ source_group( "Sequence" FILES ${SEQ_SRCS} )
 source_group( "Sequence\\Game" FILES ${SEQ_GAME_SRCS} )
 
 
+set( COPY_DIRS data )
+include( ../../cmake/copyresource.cmake )

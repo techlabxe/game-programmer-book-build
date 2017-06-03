@@ -37,3 +37,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 10_Sequence2 )
 source_group( "Sequence" FILES ${SEQ_SRCS} )
 source_group( "Sequence\\Game" FILES ${SEQ_GAME_SRCS} )
 source_group( "Game" FILES ${GAME_SRCS} )
+
+# File Copy
+set( COPY_DIRS data )
+include( ../../cmake/copyresource.cmake )

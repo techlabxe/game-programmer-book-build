@@ -34,10 +34,13 @@ target_link_libraries( ${PROJECT_NAME} debug GameLib_d )
 target_link_libraries( ${PROJECT_NAME} optimized GameLib )
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
-set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 07_2DActionGame )
+set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 08_2DCollision )
 
 source_group( "Sequence" FILES ${SEQ_SRCS} )
 source_group( "Sequence\\Game" FILES ${SEQ_GAME_SRCS} )
 source_group( "Game" FILES ${GAME_SRCS} )
 
 
+# File Copy
+set( COPY_DIRS data )
+include( ../../cmake/copyresource.cmake )

@@ -19,3 +19,8 @@ add_executable( ${PROJECT_NAME} ${SRCS} )
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 01_FirstGame )
+
+
+# File Copy
+set( COPY_FILES stageData.txt )
+include( ../../cmake/copyresource.cmake )

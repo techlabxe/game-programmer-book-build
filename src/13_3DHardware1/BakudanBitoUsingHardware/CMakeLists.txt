@@ -40,3 +40,8 @@ set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 13_3DHardware )
 source_group( "Sequence" FILES ${SEQ_SRCS} )
 
 
+
+# File Copy
+set( COPY_DIRS data )
+include( ../../cmake/copyresource.cmake )
+

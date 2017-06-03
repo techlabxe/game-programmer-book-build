@@ -24,3 +24,8 @@ target_link_libraries( ${PROJECT_NAME} optimized GameLib )
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 20_Lighting )
+
+
+# File Copy
+set( COPY_FILES stage.tga stage.txt robo.txt )
+include( ../../cmake/copyresource.cmake )

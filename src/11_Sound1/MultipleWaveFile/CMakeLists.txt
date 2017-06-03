@@ -34,3 +34,7 @@ target_link_libraries( ${PROJECT_NAME} optimized GameLib )
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 11_Sound1 )
+
+# File Copy
+set( COPY_FILES charara.wav dokaan.wav )
+include( ../../cmake/copyresource.cmake )

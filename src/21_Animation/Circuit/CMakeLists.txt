@@ -45,3 +45,7 @@ set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 21_Animation )
 
 target_link_libraries( ${PROJECT_NAME} debug Library_d GameLib_d )
 target_link_libraries( ${PROJECT_NAME} optimized Library GameLib )
+
+# File Copy
+set( COPY_FILES cube.txt )
+include( ../../cmake/copyresource.cmake )
