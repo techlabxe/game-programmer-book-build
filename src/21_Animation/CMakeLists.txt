@@ -1,0 +1,17 @@
+cmake_minimum_required (VERSION 3.8)
+
+set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "" FORCE)
+set(CMAKE_SUPPRESS_REGENERATION true)
+
+add_subdirectory( SolarSystem1 )
+add_subdirectory( SolarSystem2 )
+add_subdirectory( SolarSystem3 )
+add_subdirectory( SolarSystem4 )
+add_subdirectory( SolarSystem5 )
+add_subdirectory( SolarSystem6 )
+add_subdirectory( Circuit )
+add_subdirectory( Library )
+add_subdirectory( RoboFightWithAnimation )
+add_subdirectory( SimpleSine )
+add_subdirectory( SimpleSineWithRotation )
+add_subdirectory( SimpleSineWithRotation2 )

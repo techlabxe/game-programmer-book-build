@@ -4,12 +4,14 @@
 #include "Image.h"
 #include "Vector2.h"
 #include "Matrix23.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace std;
 
-int round( double a ){
-	a += ( a > 0.0 ) ? 0.5 : -0.5f;
-	return static_cast< int >( a );
+namespace GameLib {
+	int round(double a) {
+		a += (a > 0.0) ? 0.5 : -0.5f;
+		return static_cast<int>(a);
+	}
 }
 
 bool gFirstFrame = true;

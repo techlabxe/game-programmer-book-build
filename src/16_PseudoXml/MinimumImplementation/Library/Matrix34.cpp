@@ -1,6 +1,6 @@
 #include "Matrix34.h"
 #include "Vector3.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 
 Matrix34::Matrix34(){

@@ -10,7 +10,7 @@
 #include "PseudoXml/Attribute.h"
 #include "GameLib/Input/Manager.h"
 #include "GameLib/Input/Keyboard.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 
 bool gFirstFrame = true;

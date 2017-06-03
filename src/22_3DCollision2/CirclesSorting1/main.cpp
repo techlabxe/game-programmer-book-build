@@ -1,6 +1,6 @@
 #include "GameLib/Framework.h"
 #include "Vector2.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 #include <sstream>
 #include <algorithm>
 using namespace std;

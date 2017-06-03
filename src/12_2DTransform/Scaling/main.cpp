@@ -3,23 +3,25 @@
 #include "GameLib/Framework.h"
 #include "Image.h"
 #include "Vector2.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace std;
 
-int round( double a ){
-	a += ( a > 0.0 ) ? 0.5 : -0.5f;
-	return static_cast< int >( a );
-}
+namespace GameLib {
+	int round(double a) {
+		a += (a > 0.0) ? 0.5 : -0.5f;
+		return static_cast<int>(a);
+	}
 
-void scale(
-Vector2* out,
-const Vector2& in,
-const Vector2& offset,
-const Vector2& ratio ){
-	//Šg‘åk¬
-	out->setMul( ratio, in );
-	//Œ´“_‚ð‚¸‚ç‚·
-	*out += offset;
+	void scale(
+		Vector2* out,
+		const Vector2& in,
+		const Vector2& offset,
+		const Vector2& ratio) {
+		//Šg‘åk¬
+		out->setMul(ratio, in);
+		//Œ´“_‚ð‚¸‚ç‚·
+		*out += offset;
+	}
 }
 
 bool gFirstFrame = true;

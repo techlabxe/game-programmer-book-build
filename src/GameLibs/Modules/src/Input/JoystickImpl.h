@@ -1,6 +1,7 @@
 #ifndef INCLUDED_GAMELIB_INPUT_JOYSTICKIMPL_H
 #define INCLUDED_GAMELIB_INPUT_JOYSTICKIMPL_H
 
+#define DIRECTINPUT_VERSION 0x0800
 #include <dinput.h>
 #undef min
 #undef max

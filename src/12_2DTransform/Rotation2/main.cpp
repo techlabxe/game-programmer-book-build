@@ -2,43 +2,45 @@
 #include "GameLib/GameLib.h"
 #include "GameLib/Framework.h"
 #include "Image.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 using namespace std;
 
-int round( double a ){
-	a += ( a > 0.0 ) ? 0.5 : -0.5f;
-	return static_cast< int >( a );
-}
+namespace GameLib {
+	int round(double a) {
+		a += (a > 0.0) ? 0.5 : -0.5f;
+		return static_cast<int>(a);
+	}
 
-void rotate(
-int* rx,
-int* ry,
-int x,
-int y,
-double xOffset,
-double yOffset,
-double sine,
-double cosine ){
-	double xf = static_cast< double >( x );
-	double yf = static_cast< double >( y );
-	//オフセットと0.5をまとめる
-	double tmpOffsetX = xOffset - 0.5;
-	double tmpOffsetY = yOffset - 0.5;
-	//添え字から座標に変換して、原点をずらす
-	xf -= tmpOffsetX;
-	yf -= tmpOffsetY;
-	//式をまんま当てはめる
-	double xf2 = cosine * xf - sine * yf;
-	double yf2 = sine * xf + cosine * yf;
-	xf = xf2;
-	yf = yf2;
-	//原点を元に戻して添え字へ
-	xf += tmpOffsetX;
-	yf += tmpOffsetY;
-	//四捨五入して整数化
-	*rx = round( xf );
-	*ry = round( yf );
+	void rotate(
+		int* rx,
+		int* ry,
+		int x,
+		int y,
+		double xOffset,
+		double yOffset,
+		double sine,
+		double cosine) {
+		double xf = static_cast<double>(x);
+		double yf = static_cast<double>(y);
+		//オフセットと0.5をまとめる
+		double tmpOffsetX = xOffset - 0.5;
+		double tmpOffsetY = yOffset - 0.5;
+		//添え字から座標に変換して、原点をずらす
+		xf -= tmpOffsetX;
+		yf -= tmpOffsetY;
+		//式をまんま当てはめる
+		double xf2 = cosine * xf - sine * yf;
+		double yf2 = sine * xf + cosine * yf;
+		xf = xf2;
+		yf = yf2;
+		//原点を元に戻して添え字へ
+		xf += tmpOffsetX;
+		yf += tmpOffsetY;
+		//四捨五入して整数化
+		*rx = round(xf);
+		*ry = round(yf);
+	}
 }
 
 bool gFirstFrame = true;

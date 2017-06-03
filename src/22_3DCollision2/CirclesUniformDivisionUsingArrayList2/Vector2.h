@@ -1,7 +1,7 @@
 #ifndef INCLUDED_VECTOR2_H
 #define INCLUDED_VECTOR2_H
 
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 
 class Vector2{
 public:
@@ -34,7 +34,7 @@ public:
 		return x*x + y*y;
 	}
 	double length() const {
-		return sqrt( x*x + y*y );
+		return GameLib::sqrt( x*x + y*y );
 	}
 	void madd( const Vector2& a, double b ){
 		x += a.x * b;

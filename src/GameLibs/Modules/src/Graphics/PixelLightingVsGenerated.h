@@ -1,5 +1,5 @@
 namespace {
-const char gShaderPixelLightingVsObj[] = {\
+const char gPixelLightingVsObj[] = {\
 0, 2, -2, -1, -2, -1, 69, 0, 67, 84, 65, 66, 28, 0, 0, 0, \
 -24, 0, 0, 0, 0, 2, -2, -1, 4, 0, 0, 0, 28, 0, 0, 0, \
 0, 1, 0, 32, -31, 0, 0, 0, 108, 0, 0, 0, 2, 0, 10, 0, \

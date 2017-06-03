@@ -1,5 +1,5 @@
 #include "GameLib/GameLib.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 
 #include "Library/Vector3.h"

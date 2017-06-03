@@ -4,25 +4,27 @@
 #include "Image.h"
 #include "Vector2.h"
 #include "Matrix22.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace std;
 
-int round( double a ){
-	a += ( a > 0.0 ) ? 0.5 : -0.5f;
-	return static_cast< int >( a );
-}
+namespace GameLib {
+	int round(double a) {
+		a += (a > 0.0) ? 0.5 : -0.5f;
+		return static_cast<int>(a);
+	}
 
-void rotate(
-Vector2* out,
-const Vector2& in,
-const Vector2& offset,
-const Matrix22& matrix ){
-	//原点をずらして
-	out->setSub( in, offset );
-	//行列をかけ、
-	matrix.multiply( out, *out );
-	//原点を元に戻す
-	*out += offset;
+	void rotate(
+		Vector2* out,
+		const Vector2& in,
+		const Vector2& offset,
+		const Matrix22& matrix) {
+		//原点をずらして
+		out->setSub(in, offset);
+		//行列をかけ、
+		matrix.multiply(out, *out);
+		//原点を元に戻す
+		*out += offset;
+	}
 }
 
 bool gFirstFrame = true;

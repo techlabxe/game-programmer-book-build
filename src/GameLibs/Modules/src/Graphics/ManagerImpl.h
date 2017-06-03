@@ -258,25 +258,25 @@ public:
 		createShader(
 			&mNoLightingVertexShader,
 			0,
-			gShaderNoLightingVsObj,
-			sizeof( gShaderNoLightingVsObj ) );
+			gNoLightingVsObj,
+			sizeof( gNoLightingVsObj ) );
 		createShader(
 			&mVertexLightingVertexShader,
 			0,
-			gShaderVertexLightingVsObj,
-			sizeof( gShaderVertexLightingVsObj ) );
+			gVertexLightingVsObj,
+			sizeof( gVertexLightingVsObj ) );
 		//ピクセルシェーダを使う場合
 		if ( mPixelShaderReady ){
 			createShader(
 				&mPixelLightingVertexShader,
 				0,
-				gShaderPixelLightingVsObj,
-				sizeof( gShaderPixelLightingVsObj ) );
+				gPixelLightingVsObj,
+				sizeof( gPixelLightingVsObj ) );
 			createShader(
 				0,
 				&mPixelLightingPixelShader,
-				gShaderPixelLightingPsObj,
-				sizeof( gShaderPixelLightingPsObj ) );
+				gPixelLightingPsObj,
+				sizeof( gPixelLightingPsObj ) );
 		}
 
 		//初期ビューポート設定(ただしこれはダミーで、実際には修正される)

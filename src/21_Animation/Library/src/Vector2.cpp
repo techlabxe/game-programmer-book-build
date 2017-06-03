@@ -1,5 +1,5 @@
 #include "Library/Vector2.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 
 Vector2::Vector2(){}

@@ -1,7 +1,7 @@
 #include "GameLib/Framework.h"
 
 #include <sstream>
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 
 #include "Pad.h"
 #include "Robo.h"

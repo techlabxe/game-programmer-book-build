@@ -8,7 +8,7 @@
 #include "Library/Matrix44.h"
 #include "Library/GraphicsDatabase.h"
 #include "Library/Model.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 
 Robo::Robo( int id ) : 

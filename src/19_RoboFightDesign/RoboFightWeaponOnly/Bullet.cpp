@@ -4,7 +4,7 @@
 #include "Library/Matrix34.h"
 #include "Library/GraphicsDatabase.h"
 #include "Library/Model.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 using namespace GameLib;
 
 #include "Bullet.h"

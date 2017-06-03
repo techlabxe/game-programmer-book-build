@@ -2,39 +2,41 @@
 #include "GameLib/GameLib.h"
 #include "GameLib/Framework.h"
 #include "Image.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 #include "Vector2.h"
 using namespace GameLib;
 using namespace std;
 
-int round( double a ){
-	a += ( a > 0.0 ) ? 0.5 : -0.5f;
-	return static_cast< int >( a );
-}
+namespace {
+	int round(double a) {
+		a += (a > 0.0) ? 0.5 : -0.5f;
+		return static_cast<int>(a);
+	}
 
-void rotate(
-int* rx,
-int* ry,
-int x,
-int y,
-const Vector2& offset,
-double sine,
-double cosine ){
-	Vector2 p( x, y );
-	//オフセットと0.5をまとめる
-	Vector2 tmpOffset( -0.5, -0.5 );
-	tmpOffset += offset; //tmpOffset = offset-(0.5,0.5)
-	//添え字から座標に変換して、原点をずらす
-	p -= tmpOffset;
-	//式をまんま当てはめる
-	Vector2 r;
-	r.x = cosine * p.x - sine * p.y;
-	r.y = sine * p.x + cosine * p.y;
-	//原点を元に戻して添え字へ
-	r += tmpOffset;
-	//四捨五入して整数化
-	*rx = round( r.x );
-	*ry = round( r.y );
+	void rotate(
+		int* rx,
+		int* ry,
+		int x,
+		int y,
+		const Vector2& offset,
+		double sine,
+		double cosine) {
+		Vector2 p(x, y);
+		//オフセットと0.5をまとめる
+		Vector2 tmpOffset(-0.5, -0.5);
+		tmpOffset += offset; //tmpOffset = offset-(0.5,0.5)
+		//添え字から座標に変換して、原点をずらす
+		p -= tmpOffset;
+		//式をまんま当てはめる
+		Vector2 r;
+		r.x = cosine * p.x - sine * p.y;
+		r.y = sine * p.x + cosine * p.y;
+		//原点を元に戻して添え字へ
+		r += tmpOffset;
+		//四捨五入して整数化
+		*rx = round(r.x);
+		*ry = round(r.y);
+	}
 }
 
 bool gFirstFrame = true;

@@ -5,7 +5,7 @@ using namespace GameLib;
 #include "Image.h"
 #include "Matrix23.h"
 #include "Vector2.h"
-#include "GameLib/Math.h"
+#include "GameLib/GameLibMath.h"
 
 Image* gImage;
 Texture* gTexture;

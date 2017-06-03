@@ -50,7 +50,7 @@ int main( int argc, const char** argv ){
 	}
 }
 
-void write( bool* succeeded, ofstream& o, const char* inFileName ){
+void write( bool* succeeded, ofstream& o, const char* inFileName  ){
 	setlocale( LC_ALL, "" ); //これがないと日本語ファイル名を受け付けない
 	ifstream in( inFileName, ifstream::binary );
 	if ( !in ){
@@ -68,21 +68,30 @@ void write( bool* succeeded, ofstream& o, const char* inFileName ){
 		*succeeded = false;
 		return;
 	}
+
+    char fileNameBody[_MAX_PATH], fileNameExt[_MAX_PATH];
+    memset( fileNameBody, 0, sizeof(fileNameBody));
+    memset( fileNameExt, 0, sizeof(fileNameExt));
+    _splitpath_s( inFileName, NULL, 0, NULL, 0, fileNameBody, sizeof(fileNameBody), fileNameExt, sizeof(fileNameExt) );
+    string fileName(fileNameBody);
+    fileName += fileNameExt;
+
 	//変数名はファイル名から生成。
 	//スラッシュ、バックスラッシュ、ピリオド、0x80以上は無視して次の文字を大文字に変換
-	string name;
+	string name ;
 	bool capital = true;
-	for ( unsigned i = 0; inFileName[ i ]; ++i ){
-		if ( inFileName[ i ] == '/' ){
+    const char* fileNameBuf = fileName.data();
+	for ( unsigned i = 0; fileNameBuf[ i ] ; ++i ){
+		if ( fileNameBuf[ i ] == '/' ){
 			capital = true;
-		}else if ( inFileName[ i ] == '\\' ){
+		}else if ( fileNameBuf[ i ] == '\\' ){
 			capital = true;
-		}else if ( inFileName[ i ] == '.' ){
+		}else if ( fileNameBuf[ i ] == '.' ){
 			capital = true;
-		}else if ( !isgraph( inFileName[ i ] ) ){
+		}else if ( !isgraph( fileNameBuf[ i ] ) ){
 			capital = true;
 		}else{
-			char c = inFileName[ i ];
+			char c = fileNameBuf[ i ];
 			if ( capital ){
 				c = toupper( c );
 				capital = false;
