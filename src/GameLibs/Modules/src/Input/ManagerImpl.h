@@ -11,10 +11,6 @@
 #include "GameLib/WindowCreator/WindowCreator.h"
 using namespace GameLib::Math;
 
-#include <dinput.h>
-#undef min
-#undef max
-
 #include "Input/JoystickImpl.h"
 
 namespace GameLib{

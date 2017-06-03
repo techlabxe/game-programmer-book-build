@@ -1,26 +1,6 @@
 cmake_minimum_required (VERSION 3.8)
 project ( Modules )
 
-FIND_PATH(DIRECT3D_INCLUDE_DIR d3dx9.h
- 	"$ENV{DXSDK_DIR}/Include"
-    	"C:/Program Files/Microsoft DirectX SDK/Include"
-    	"C:/DXSDK/Include"
-   	NO_DEFAULT_PATH
-   	DOC "What is the path where the file d3dx9.h can be found"
-  )
-  FIND_PATH(DIRECT3D_INCLUDE_DIR d3dx9.h
-   	NO_DEFAULT_PATH
-   	DOC "What is the path where the file d3dx9.h can be found"
-  )
-FIND_LIBRARY(DIRECT3D_d3d9_LIBRARY d3d9
-	  "$ENV{DXSDK_DIR}/Lib"	
-	  "$ENV{DXSDK_DIR}/Lib/x86"
-	  "C:/Program Files/Microsoft DirectX SDK/Lib/x86"
-          "C:/DXSDK/Include/Lib/x86"
-	  NO_DEFAULT_PATH
-          DOC "Where can the Direct3D d3d9 library be found"
-        )
-
 set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "" FORCE)
 
 set(CMAKE_SUPPRESS_REGENERATION true)
@@ -176,27 +156,14 @@ set( WINDOWCREATOR_SRCS
 	src/WindowCreator/Resource.h
 )
 
-find_path(D3D9_INCLUDE_DIR d3d9.h
-    HINTS "$ENV{DXSDK_DIR}/Include"
-    )
-
-find_library(D3D9_LIBRARY
-	    NAMES d3d9
-	    HINTS "$ENV{DXSDK_DIR}/Lib/$ENV{PROCESSOR_ARCHITECTURE}"
-)
 
 include_directories( src )
-include_directories( ${D3D9_INCLUDE_DIR} )
-link_directories(${D3D9_LIBRARY})
 
 set (
   CMAKE_STATIC_LINKER_FLAGS 
   "winmm.lib d3d9.lib dsound.lib dinput8.lib dxguid.lib"
 )
 
-
-
-# add_custom_target(my_target1 echo @@ command_1 ALL)
 
 add_library( 
 	Modules
