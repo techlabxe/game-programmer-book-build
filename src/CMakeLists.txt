@@ -34,5 +34,6 @@ add_subdirectory( 22_3DCollision2 )
 add_subdirectory( 23_Loading )
 add_subdirectory( 25_UsingFinalLibrary )
 add_subdirectory( 26_LifeWithBugs )
+add_subdirectory( NonFree )
 
 
