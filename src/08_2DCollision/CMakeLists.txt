@@ -1,0 +1,16 @@
+cmake_minimum_required (VERSION 3.8)
+
+set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "" FORCE)
+set(CMAKE_SUPPRESS_REGENERATION true)
+
+add_subdirectory( BakudanBitoWithCollision )
+add_subdirectory( Detection )
+add_subdirectory( Reaction1 )
+add_subdirectory( Reaction2 )
+add_subdirectory( Reaction3 )
+add_subdirectory( Reaction4 )
+add_subdirectory( Reaction5 )
+add_subdirectory( ReducingStress1 )
+add_subdirectory( ReducingStress2 )
+add_subdirectory( ReducingStress3 )
+add_subdirectory( StressfulReaction )
