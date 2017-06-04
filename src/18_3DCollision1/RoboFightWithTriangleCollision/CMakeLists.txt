@@ -43,8 +43,8 @@ add_dependencies( ${PROJECT_NAME} 3DCollisionLibrary )
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 18_3DCollision )
 
-target_link_libraries( ${PROJECT_NAME} debug Library_d GameLib_d )
-target_link_libraries( ${PROJECT_NAME} optimized Library GameLib )
+target_link_libraries( ${PROJECT_NAME} debug Library_d debug GameLib_d )
+target_link_libraries( ${PROJECT_NAME} optimized Library optimized GameLib )
 
 # File Copy
 set( COPY_FILES robo.tga stage.tga stage.txt robo.txt )
