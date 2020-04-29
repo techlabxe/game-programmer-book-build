@@ -601,7 +601,7 @@ public:
 	void* allocate( size_t sizeOrig ){
 #endif
 #ifdef _WIN64
-		STRONG_ASSERT( sizeoOrig <= 0xffffffff && "allocation over 4GB is forbidden" );
+		STRONG_ASSERT( sizeOrig <= 0xffffffff && "allocation over 4GB is forbidden" );
 #endif
 		U4 size = static_cast< U4 >( sizeOrig ); //4GBà»è„ÇÃ
 		//ñﬂÇËíl
