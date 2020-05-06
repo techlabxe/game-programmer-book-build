@@ -102,9 +102,10 @@ template< class A, class B > inline U4 diff( A* p0, B* p1 ){
 
 //ポインタをアライン
 template< class T > inline T* align( T* p, U4 n ){
+	ptrdiff_t n2 = static_cast<ptrdiff_t>(n - 1);
 	ptrdiff_t address = ptr( p ) - static_cast< char* >( 0 );
-	address += n - 1;
-	address &= ~( n - 1 );
+	address += n2;
+	address &= ~( n2 );
 	return reinterpret_cast< T* >( address );
 }
 
@@ -773,7 +774,7 @@ private:
 	}
 	Heap* getHeap( void* p ){
 		ptrdiff_t address = ptr( p ) - static_cast< char* >( 0 );
-		address &= ~( HEAP_REGION_SIZE - 1 );
+		address &= ~( static_cast<ptrdiff_t>(HEAP_REGION_SIZE - 1) );
 		return reinterpret_cast< Heap* >( address );
 	}
 #ifdef USE_DEBUG_INFO
