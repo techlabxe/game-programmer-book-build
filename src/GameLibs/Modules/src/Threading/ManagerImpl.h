@@ -41,12 +41,12 @@ public:
 		//コア数取得
 #ifdef NDEBUG //Debug版では自動では一個しか作らない。開発マシンで動いて他で動かない、を防ぐため。
 		HANDLE process = GetCurrentProcess();
-		DWORD processMask;
-		DWORD systemMask;
-		BOOL succeeded = GetProcessAffinityMask( process, &processMask, &systemMask );
+		PDWORD_PTR processMask;
+		PDWORD_PTR systemMask;
+		BOOL succeeded = GetProcessAffinityMask( process, processMask, systemMask );
 		if ( succeeded != 0 ){ //失敗されても困るけどな...
 			for ( int i = 1; i < 32; ++i ){
-				if ( processMask & ( 1 << i ) ){
+				if ( processMask && ( 1 << i ) ){
 					++mCoreNumber;
 				}
 			}
