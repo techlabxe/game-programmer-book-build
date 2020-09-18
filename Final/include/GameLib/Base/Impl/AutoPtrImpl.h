@@ -3,7 +3,7 @@
 
 namespace GameLib{
 
-template< class T > inline AutoPtr< T >::AutoPtr( T* p = 0 ) : 
+template< class T > inline AutoPtr< T >::AutoPtr( T* p /*= 0*/ ) : 
 mPointer( p ){
 }
 
