@@ -44,8 +44,7 @@ add_dependencies( ${PROJECT_NAME} RoboFightDesignLibrary )
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 19_RoboFightDesign )
 
-target_link_libraries( ${PROJECT_NAME} debug Library_d debug GameLib_d )
-target_link_libraries( ${PROJECT_NAME} optimized Library optimized GameLib )
+target_link_libraries( ${PROJECT_NAME} general RoboFightDesignLibrary optimized GameLib debug GameLib_d)
 
 # File Copy
 set( COPY_FILES robo.tga stage.tga stage.txt robo.txt )

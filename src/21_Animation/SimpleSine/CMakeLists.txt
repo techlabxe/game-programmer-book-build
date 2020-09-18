@@ -43,8 +43,7 @@ add_dependencies( ${PROJECT_NAME} AnimationLibrary )
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 21_Animation )
 
-target_link_libraries( ${PROJECT_NAME} debug Library_d debug GameLib_d )
-target_link_libraries( ${PROJECT_NAME} optimized Library optimized GameLib )
+target_link_libraries( ${PROJECT_NAME} general AnimationLibrary optimized GameLib debug GameLib_d)
 
 # File Copy
 set( COPY_FILES cube.txt )

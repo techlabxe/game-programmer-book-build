@@ -43,8 +43,7 @@ add_dependencies( ${PROJECT_NAME} FinalLibrary )
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER 26_LifeWithBugs )
 
-target_link_libraries( ${PROJECT_NAME} debug Library_d debug GameLib_d )
-target_link_libraries( ${PROJECT_NAME} optimized Library optimized GameLib )
+target_link_libraries( ${PROJECT_NAME} general FinalLibrary optimized GameLib debug GameLib_d)
 
 # File Copy
 set( COPY_FILES robo.txt robo.tga stage.tga stage.txt )
